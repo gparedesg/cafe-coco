@@ -1,26 +1,55 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Café color palette */
+  --color-coffee-50: #f7f3f0;
+  --color-coffee-100: #ede3db;
+  --color-coffee-200: #dcc7b8;
+  --color-coffee-300: #c8a690;
+  --color-coffee-400: #b68968;
+  --color-coffee-500: #a67c52;
+  --color-coffee-600: #8b6644;
+  --color-coffee-700: #6f5138;
+  --color-coffee-800: #594030;
+  --color-coffee-900: #4a352a;
+  
+  --color-cream-50: #fefcf9;
+  --color-cream-100: #fdf8f0;
+  --color-cream-200: #fbf0de;
+  --color-cream-300: #f7e4c7;
+  --color-cream-400: #f2d6ab;
+  --color-cream-500: #ecc788;
+  --color-cream-600: #e1b464;
+  --color-cream-700: #d19c47;
+  --color-cream-800: #b07f3d;
+  --color-cream-900: #8f6732;
+  
+  --color-forest-50: #f0f9f4;
+  --color-forest-100: #dcf2e3;
+  --color-forest-200: #bce5cb;
+  --color-forest-300: #8dd2a8;
+  --color-forest-400: #5bb880;
+  --color-forest-500: #369d62;
+  --color-forest-600: #277d4e;
+  --color-forest-700: #206540;
+  --color-forest-800: #1d5135;
+  --color-forest-900: #19432d;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+
+  /* Animations */
+  --animate-fade-in: fadeIn 0.5s ease-in-out;
+  --animate-slide-up: slideUp 0.6s ease-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
