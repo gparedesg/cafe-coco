@@ -55,7 +55,7 @@ export default function AboutPage() {
       <div className="bg-coffee-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6">
-            Our Story
+            The Story of Café Coco
           </h1>
           <p className="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto">
             Crafting exceptional coffee experiences
@@ -72,20 +72,16 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 text-lg text-coffee-600 leading-relaxed">
                 <p>
-                  What started as a dream to create the perfect neighborhood coffee experience 
-                  has grown into a beloved community hub in Long Island City. Our journey began 
-                  when Jacob Sebag, a passionate coffee lover, decided to open a space where 
-                  exceptional coffee meets warm hospitality.
+                  Café Coco was born from a simple yet heartfelt idea: to create a space where people could gather, connect, and share the little joys of life. From the beginning, the vision was clear—bring together the comforting aroma of coffee, the delight of artisan baked goods, and the relaxed joy of brunch at any time of day.
                 </p>
                 <p>
-                  Every morning, we wake up excited to serve our community. From our signature 
-                  pistachio croissants (which have become legendary among locals) to our carefully 
-                  curated coffee selection, we believe that great food and drink have the power 
-                  to bring people together and brighten their day.
+                  At Café Coco, coffee isn’t just a drink — it’s a ritual, a reason to pause and savor the moment. Our baristas are passionate about every pour, every blend, and every detail that turns a cup into an experience. Alongside that, we partner with artisan bakers who craft breads, pastries, and sweets with the same dedication, bringing their creations fresh to our café each day.
                 </p>
                 <p>
-                  We&apos;re not just serving coffee – we&apos;re crafting experiences, building relationships, 
-                  and creating moments of joy that carry our guests through their busy days.
+                  But what truly sets Café Coco apart is the spirit of community. It’s not just a café — it’s a place where friendships spark over lattes, where neighbors gather at long tables, and where the sound of children’s laughter blends with the hum of conversation. Whether you’re starting your morning with a croissant, catching up with a friend over brunch, or enjoying an afternoon cappuccino, Café Coco is a place to feel at home.
+                </p>
+                <p>
+                  At its heart, Café Coco is about more than food and coffee — it’s about belonging. It’s about the laughter that fills the air, the conversations that flow freely, and the friendships that form across tables. Café Coco was established so that every visit feels like more than just a stop — it feels like a connection, a celebration, and a community.
                 </p>
               </div>
             </div>

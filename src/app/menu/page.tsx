@@ -17,13 +17,10 @@ export default function MenuPage() {
             Our Menu
           </h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
-            Discover our carefully curated selection of coffee, pastries, and wholesome dishes
+            More than just a menu; we invite you to  <br /> slow down, connect, and feel at home
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <OrderButton size="lg" text="Order Online Now" />
-            <p className="text-cream-300">
-              View full menu with prices and place your order
-            </p>
           </div>
         </div>
       </div>

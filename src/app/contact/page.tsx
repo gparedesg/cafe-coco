@@ -18,7 +18,7 @@ export default function ContactPage() {
             Visit Us Today
           </h1>
           <p className="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto">
-            We&apos;d love to see you at Café Coco
+            The Art of Coffee & Connection
           </p>
         </div>
       </div>
@@ -28,7 +28,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
               <h2 className="text-4xl font-serif font-bold text-coffee-800 mb-8">
-                Find Us
+                Contact Us
               </h2>
               
               <div className="space-y-8">
@@ -37,13 +37,8 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-xl font-semibold text-coffee-800 mb-2">Address</h3>
                     <p className="text-coffee-600 text-lg">
-                      21-52 44th Dr<br />
-                      Long Island City<br />
-                      City, State 12345
-                    </p>
-                    <p className="text-coffee-500 mt-2">
-                      Located right next to Court Square in Long Island City, <br /> 
-                      with a 1-minute walk to the E, M, G, and 7 trains
+                      21-52 44th Drive<br />
+                      Long Island City NY 11101
                     </p>
                   </div>
                 </div>
@@ -53,9 +48,6 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-xl font-semibold text-coffee-800 mb-2">Phone</h3>
                     <p className="text-coffee-600 text-lg">(555) 123-COCO</p>
-                    <p className="text-coffee-500 mt-2">
-                      Call us for reservations, catering, or any questions
-                    </p>
                   </div>
                 </div>
 
@@ -63,16 +55,13 @@ export default function ContactPage() {
                   <Mail className="w-8 h-8 text-forest-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-semibold text-coffee-800 mb-2">Email</h3>
-                    <p className="text-coffee-600 text-lg">hello@cocoespressobar.com</p>
-                    <p className="text-coffee-500 mt-2">
-                      For inquiries, feedback, or partnership opportunities
-                    </p>
+                    <p className="text-coffee-600 text-lg">hello@coco-cafe.com</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
                   <Clock className="w-8 h-8 text-forest-600 mt-1 flex-shrink-0" />
-                  <div>
+                  <div className="w-xs">
                     <h3 className="text-xl font-semibold text-coffee-800 mb-2">Hours</h3>
                     <div className="space-y-2 text-coffee-600">
                       <div className="flex justify-between items-center">
@@ -88,9 +77,6 @@ export default function ContactPage() {
                         <span className="font-medium">7:00 AM - 5:00 PM</span>
                       </div>
                     </div>
-                    <p className="text-coffee-500 mt-2">
-                      Extended hours during the holiday season
-                    </p>
                   </div>
                 </div>
               </div>
