@@ -2,38 +2,38 @@
 
 @theme inline {
   /* Café color palette */
-  --color-coffee-50: #f7f3f0;
-  --color-coffee-100: #ede3db;
-  --color-coffee-200: #dcc7b8;
-  --color-coffee-300: #c8a690;
-  --color-coffee-400: #b68968;
-  --color-coffee-500: #a67c52;
-  --color-coffee-600: #8b6644;
-  --color-coffee-700: #6f5138;
-  --color-coffee-800: #594030;
-  --color-coffee-900: #4a352a;
+  --color-coffee-50: #f5f4f2;
+  --color-coffee-100: #e8e6df;
+  --color-coffee-200: #d1cdc0;
+  --color-coffee-300: #b5ae98;
+  --color-coffee-400: #98916f;
+  --color-coffee-500: #7a7354;
+  --color-coffee-600: #554f39;
+  --color-coffee-700: #433e2d;
+  --color-coffee-800: #322f23;
+  --color-coffee-900: #25231b;
   
-  --color-cream-50: #fefcf9;
-  --color-cream-100: #fdf8f0;
-  --color-cream-200: #fbf0de;
-  --color-cream-300: #f7e4c7;
-  --color-cream-400: #f2d6ab;
-  --color-cream-500: #ecc788;
-  --color-cream-600: #e1b464;
-  --color-cream-700: #d19c47;
-  --color-cream-800: #b07f3d;
-  --color-cream-900: #8f6732;
+  --color-yellow-50: #fffef5;
+  --color-yellow-100: #ffeb99;
+  --color-yellow-200: #ffe166;
+  --color-yellow-300: #ffd733;
+  --color-yellow-400: #ffcd00;
+  --color-yellow-500: #ffcd00;
+  --color-yellow-600: #cca400;
+  --color-yellow-700: #997b00;
+  --color-yellow-800: #665200;
+  --color-yellow-900: #4d3d00;
   
-  --color-forest-50: #f0f9f4;
-  --color-forest-100: #dcf2e3;
-  --color-forest-200: #bce5cb;
-  --color-forest-300: #8dd2a8;
-  --color-forest-400: #5bb880;
-  --color-forest-500: #369d62;
-  --color-forest-600: #277d4e;
-  --color-forest-700: #206540;
-  --color-forest-800: #1d5135;
-  --color-forest-900: #19432d;
+  --color-forest-50: #f9f8f2;
+  --color-forest-100: #f0ede0;
+  --color-forest-200: #e0d9bf;
+  --color-forest-300: #cec299;
+  --color-forest-400: #baa769;
+  --color-forest-500: #aa9339;
+  --color-forest-600: #88762e;
+  --color-forest-700: #665824;
+  --color-forest-800: #443b18;
+  --color-forest-900: #332c12;
 
   /* Typography */
   --font-sans: 'Inter', system-ui, sans-serif;
