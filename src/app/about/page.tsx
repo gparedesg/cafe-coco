@@ -115,24 +115,24 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-coffee-800 mb-4">
-              About Jacob "Coco" Sebag
+              {`About Jacob "Coco" Sebag`}
             </h2>
           </div>
 
           <div className="max-w-4xl mx-auto">
             <div className="space-y-6 text-lg text-coffee-600 leading-relaxed">
               <p>
-                Jacob "Coco" Sebag is a true renaissance man — a gourmet, a creative, and a host at heart. Long before Café Coco came to life, Jacob's passion for food and hospitality was already part of his story. In the 1980s, he owned and operated Le Triomphe, a celebrated French restaurant in Long Island City known for its classic dishes, fine wines, and spirited neighborhood charm.
+                {`Jacob "Coco" Sebag is a true renaissance man — a gourmet, a creative, and a host at heart. Long before Café Coco came to life, Jacob's passion for food and hospitality was already part of his story. In the 1980s, he owned and operated Le Triomphe, a celebrated French restaurant in Long Island City known for its classic dishes, fine wines, and spirited neighborhood charm.`}
               </p>
               <p>
-                In the decades since, Jacob built a distinguished career as a New York attorney, known for his intellect, integrity, and keen sense of human connection — qualities that also define his approach to hospitality. Beyond the courtroom, he's an artist of many forms: he has appeared in several films, including Sidney Pollack's final movie, <em>The Interpreter</em>, where he portrayed the French Ambassador.
+                {`In the decades since, Jacob built a distinguished career as a New York attorney, known for his intellect, integrity, and keen sense of human connection — qualities that also define his approach to hospitality. Beyond the courtroom, he's an artist of many forms: he has appeared in several films, including Sidney Pollack's final movie, <em>The Interpreter</em>, where he portrayed the French Ambassador.`}
               </p>
               <p>
-                For those who know him best, Café Coco feels inevitable. Jacob's lifelong love of coffee, bread, and sweets, combined with his joy in gathering people around good conversation and beautiful food, made this next chapter only a matter of time.
+                {`For those who know him best, Café Coco feels inevitable. Jacob's lifelong love of coffee, bread, and sweets, combined with his joy in gathering people around good conversation and beautiful food, made this next chapter only a matter of time.`}
               </p>
               <p>
-                Café Coco is his newest creation — a place where community, creativity, and indulgence meet. It's where Jacob's worlds come together: the elegance of a French café, the warmth of a host who treats every guest like family, and the perfectionism of a man who believes that even a croissant should have soul.
-              </p>
+                {`Café Coco is his newest creation — a place where community, creativity, and indulgence meet. It's where Jacob's worlds come together: the elegance of a French café, the warmth of a host who treats every guest like family, and the perfectionism of a man who believes that even a croissant should have soul.`}
+             </p>
             </div>
           </div>
         </div>

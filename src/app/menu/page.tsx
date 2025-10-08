@@ -44,7 +44,7 @@ function CategoryDigestCard({ category }: { category: MenuCategory }) {
           <div className="relative h-56 sm:h-64 lg:h-full">
             <Image
               src={img}
-              alt={`${category.name} at Café Coco`}
+              alt={alt}
               fill
               className="object-cover"
               sizes="(min-width: 1024px) 40vw, 100vw"
