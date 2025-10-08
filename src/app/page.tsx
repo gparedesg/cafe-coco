@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Hero />
       
-      <section id="featured-menu" className="py-20 bg-cream-50">
+      <section id="featured-menu" className="py-20 bg-yellow-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-coffee-800 mb-4">
@@ -47,7 +47,7 @@ export default function Home() {
         className="relative py-24 overflow-hidden"
       >
         {/* soft gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-cream-100 via-cream-50 to-cream-200 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-yellow-50 via-yellow-50 to-yellow-200 pointer-events-none" />
         {/* subtle decorative ring */}
         <div className="absolute -top-24 -right-24 h-80 w-80 rounded-full border border-coffee-100/60 blur-[1px] opacity-40" />
         <div className="absolute -bottom-28 -left-28 h-96 w-96 rounded-full border border-coffee-100/60 blur-[1px] opacity-40" />
@@ -80,7 +80,7 @@ export default function Home() {
 
               {/* Signup bar */}
               <form
-                className="mt-8 flex w-full max-w-xl rounded-2xl bg-white/90 backdrop-blur border border-cream-300 shadow-sm overflow-hidden"
+                className="mt-8 flex w-full max-w-xl rounded-2xl bg-white/90 backdrop-blur border border-yellow-300 shadow-sm overflow-hidden"
                 aria-label="Sign up for Coffee Raves updates"
               >
                 <input
@@ -92,7 +92,7 @@ export default function Home() {
                 />
                 <button
                   type="submit"
-                  className="shrink-0 px-5 sm:px-6 py-3.5 bg-coffee-700 text-cream-50 font-medium hover:bg-coffee-800 transition-colors"
+                  className="shrink-0 px-5 sm:px-6 py-3.5 bg-coffee-700 text-yellow-50 font-medium hover:bg-coffee-800 transition-colors"
                 >
                   Sign Up
                 </button>
@@ -108,14 +108,14 @@ export default function Home() {
             {/* Event card / visual */}
             <div className="lg:col-span-5">
               <div className="relative">
-                <div className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-coffee-200 via-cream-200 to-cream-100 blur-xl opacity-70" />
-                <div className="relative rounded-3xl bg-white border border-cream-300 shadow-lg overflow-hidden">
+                <div className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-coffee-200 via-yellow-200 to-yellow-100 blur-xl opacity-70" />
+                <div className="relative rounded-3xl bg-white border border-yellow-300 shadow-lg overflow-hidden">
                   <div className="p-6 sm:p-8">
                     <div className="flex items-center justify-between">
                       <h3 className="text-2xl font-serif font-semibold text-coffee-900">
                         Coffee Rave — Next Drop
                       </h3>
-                      <span className="text-xs uppercase tracking-wide px-2.5 py-1 rounded-full bg-cream-100 text-coffee-700 border border-cream-300">
+                      <span className="text-xs uppercase tracking-wide px-2.5 py-1 rounded-full bg-yellow-100 text-coffee-700 border border-yellow-300">
                         Monthly
                       </span>
                     </div>
@@ -125,21 +125,21 @@ export default function Home() {
                     </p>
 
                     <div className="mt-6 grid grid-cols-3 gap-4 text-center">
-                      <div className="rounded-xl border border-cream-300 p-4">
+                      <div className="rounded-xl border border-yellow-300 p-4">
                         <div className="text-sm text-coffee-600">When</div>
                         <div className="mt-1 font-medium text-coffee-900">TBA</div>
                       </div>
-                      <div className="rounded-xl border border-cream-300 p-4">
+                      <div className="rounded-xl border border-yellow-300 p-4">
                         <div className="text-sm text-coffee-600">Where</div>
                         <div className="mt-1 font-medium text-coffee-900">Long Island City</div>
                       </div>
-                      <div className="rounded-xl border border-cream-300 p-4">
+                      <div className="rounded-xl border border-yellow-300 p-4">
                         <div className="text-sm text-coffee-600">Vibe</div>
                         <div className="mt-1 font-medium text-coffee-900">High-Energy</div>
                       </div>
                     </div>
 
-                    <div className="mt-6 rounded-xl bg-cream-50 border border-cream-200 p-4">
+                    <div className="mt-6 rounded-xl bg-yellow-50 border border-yellow-200 p-4">
                       <p className="text-sm text-coffee-700">
                         Be first in line for dates and early access drops. We’ll email you as soon as the next
                         Coffee Rave is announced.
@@ -149,7 +149,7 @@ export default function Home() {
                     <div className="mt-6">
                       <button
                         type="button"
-                        className="w-full py-3.5 rounded-xl bg-coffee-700 text-cream-50 font-medium hover:bg-coffee-800 transition-colors"
+                        className="w-full py-3.5 rounded-xl bg-coffee-700 text-yellow-50 font-medium hover:bg-coffee-800 transition-colors"
                       >
                         Get Notified
                       </button>
@@ -165,7 +165,7 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="py-20 bg-cream-200">
+      <section className="py-20 bg-forest-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-coffee-800 mb-4">

@@ -21,7 +21,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center">
-            <Image src="/cafe_coco_logo_no_text.png" alt="Cafe Coco Logo" width={60} height={60} />
+            <Image src="/cafe_coco.svg" alt="Cafe Coco" width={150} height={60} className="h-12 w-auto" style={{ filter: 'brightness(0)' }} />
             <span className="font-bold text-xl uppercase">
               Café Coco
             </span>

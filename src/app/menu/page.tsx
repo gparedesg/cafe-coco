@@ -37,10 +37,10 @@ function CategoryDigestCard({ category }: { category: MenuCategory }) {
 
   return (
     <section id={category.id} className="scroll-mt-24">
-      <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-8 bg-white border border-cream-300 rounded-3xl shadow-sm overflow-hidden">
+      <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-8 bg-white border border-yellow-300 rounded-3xl shadow-sm overflow-hidden">
         {/* Visual */}
         <div className="lg:col-span-5 relative">
-          <div className="absolute -inset-1 bg-gradient-to-br from-cream-100 to-cream-200 opacity-60" />
+          <div className="absolute -inset-1 bg-gradient-to-br from-yellow-100 to-yellow-200 opacity-60" />
           <div className="relative h-56 sm:h-64 lg:h-full">
             <Image
               src={img}
@@ -54,7 +54,7 @@ function CategoryDigestCard({ category }: { category: MenuCategory }) {
 
         {/* Content */}
         <div className="lg:col-span-7 p-8 sm:p-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cream-100 text-coffee-700 border border-cream-300 text-sm mb-5">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yellow-100 text-coffee-700 border border-yellow-300 text-sm mb-5">
             <span className="h-2 w-2 rounded-full bg-coffee-500" />
             {category.items.length} items
           </div>
@@ -75,13 +75,13 @@ function CategoryDigestCard({ category }: { category: MenuCategory }) {
               {sample.map(item => (
                 <span
                   key={item.id}
-                  className="px-3 py-1.5 rounded-full bg-cream-50 border border-cream-300 text-coffee-800 text-sm"
+                  className="px-3 py-1.5 rounded-full bg-yellow-50 border border-yellow-300 text-coffee-800 text-sm"
                 >
                   {item.name}
                 </span>
               ))}
               {category.items.length > sample.length && (
-                <span className="px-3 py-1.5 rounded-full bg-white border border-cream-300 text-coffee-700 text-sm">
+                <span className="px-3 py-1.5 rounded-full bg-white border border-yellow-300 text-coffee-700 text-sm">
                   + more
                 </span>
               )}
@@ -100,7 +100,7 @@ function CategoryDigestCard({ category }: { category: MenuCategory }) {
 
 export default function MenuPage() {
   return (
-    <div className="min-h-screen bg-cream-50">
+    <div className="min-h-screen bg-yellow-50">
       {/* Hero */}
       <div className="bg-coffee-800 text-white py-20" id="top-order">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -115,7 +115,7 @@ export default function MenuPage() {
       </div>
 
       {/* Sticky chip nav */}
-      <div className="bg-cream-200 sticky top-0 z-20 border-y border-cream-500 bg-cream-50/80 backdrop-blur">
+      <div className="bg-yellow-200 sticky top-0 z-20 border-y border-yellow-500 bg-yellow-50/80 backdrop-blur">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav
             aria-label="Menu categories"
@@ -125,7 +125,7 @@ export default function MenuPage() {
               <a
                 key={cat.id}
                 href={`#${cat.id}`}
-                className="whitespace-nowrap px-3 py-1.5 rounded-full bg-white border border-cream-500 text-coffee-800 hover:bg-cream-100 transition"
+                className="whitespace-nowrap px-3 py-1.5 rounded-full bg-white border border-yellow-500 text-coffee-800 hover:bg-yellow-100 transition"
               >
                 {cat.name}
               </a>
@@ -151,13 +151,13 @@ export default function MenuPage() {
         ))}
 
         {/* Footer CTA */}
-        <div className="mt-8 bg-white rounded-2xl shadow-lg p-12 text-center border border-cream-300">
+        <div className="mt-8 bg-white rounded-2xl shadow-lg p-12 text-center border border-yellow-300">
           <h3 className="text-3xl font-serif font-bold text-coffee-800 mb-6">Ready to Order?</h3>
           <p className="text-lg text-coffee-600 mb-8 max-w-2xl mx-auto">
             Open our complete Toast menu with live pricing, modifiers, and availability.
           </p>
           <OrderButton size="lg" text="Order Online Through Toast" />
-          <div className="mt-8 pt-8 border-t border-cream-300">
+          <div className="mt-8 pt-8 border-t border-yellow-300">
             <p className="text-coffee-600 mb-2">
               <strong>Pickup:</strong> Usually ready in 10–15 minutes
             </p>

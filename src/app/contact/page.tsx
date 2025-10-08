@@ -122,7 +122,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-cream-50">
+      <section className="py-16 bg-yellow-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-serif font-bold text-coffee-800 mb-4">
@@ -149,7 +149,7 @@ export default function ContactPage() {
             <h2 className="text-3xl font-serif font-bold mb-6">
               Questions or Special Requests?
             </h2>
-            <p className="text-xl text-cream-200 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-yellow-200 mb-8 max-w-3xl mx-auto">
               Whether you&apos;re planning an event, have dietary restrictions, or just want to chat about coffee, 
               we&apos;re here to help. Don&apos;t hesitate to reach out!
             </p>
@@ -159,24 +159,24 @@ export default function ContactPage() {
                 <div className="bg-forest-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Phone className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="font-semibold text-cream-100 mb-2">Call Us</h3>
-                <p className="text-cream-300 text-sm">Quick questions or immediate assistance</p>
+                <h3 className="font-semibold text-yellow-100 mb-2">Call Us</h3>
+                <p className="text-yellow-300 text-sm">Quick questions or immediate assistance</p>
               </div>
               
               <div className="text-center">
                 <div className="bg-forest-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Mail className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="font-semibold text-cream-100 mb-2">Send a Message</h3>
-                <p className="text-cream-300 text-sm">Detailed inquiries or feedback</p>
+                <h3 className="font-semibold text-yellow-100 mb-2">Send a Message</h3>
+                <p className="text-yellow-300 text-sm">Detailed inquiries or feedback</p>
               </div>
               
               <div className="text-center">
                 <div className="bg-forest-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="font-semibold text-cream-100 mb-2">Visit In Person</h3>
-                <p className="text-cream-300 text-sm">Nothing beats a face-to-face conversation</p>
+                <h3 className="font-semibold text-yellow-100 mb-2">Visit In Person</h3>
+                <p className="text-yellow-300 text-sm">Nothing beats a face-to-face conversation</p>
               </div>
             </div>
           </div>

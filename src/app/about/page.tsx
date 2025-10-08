@@ -32,24 +32,6 @@ export default function AboutPage() {
     }
   ]
 
-  const team = [
-    {
-      name: "Sofia Martinez",
-      role: "Head Roaster",
-      bio: "With 15 years in specialty coffee, Sofia brings her passion for exceptional beans and sustainable practices to every cup."
-    },
-    {
-      name: "Marcus Chen",
-      role: "Head Pastry Chef",
-      bio: "Trained in French patisserie, Marcus creates our beloved croissants and pastries fresh each morning with traditional techniques."
-    },
-    {
-      name: "Jack Thompson",
-      role: "Community Manager",
-      bio: "Jack ensures every customer feels welcomed and coordinates our community events and local partnerships."
-    }
-  ]
-
   return (
     <div className="min-h-screen">
       <div className="bg-coffee-800 text-white py-20">
@@ -98,7 +80,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-cream-200">
+      <section className="py-20 bg-yellow-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-coffee-800 mb-4">
@@ -133,36 +115,25 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-coffee-800 mb-4">
-              Meet Our Team
+              About Jacob "Coco" Sebag
             </h2>
-            <p className="text-xl text-coffee-600 max-w-3xl mx-auto">
-              The passionate people behind every cup, pastry, and smile at Café Coco
-            </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <div key={index} className="text-center">
-                <div className="mb-6">
-                  <Image
-                    src={`/team/${member.name.toLowerCase().replace(' ', '-')}.jpg`}
-                    alt={member.name}
-                    width={200}
-                    height={200}
-                    className="rounded-full mx-auto shadow-lg"
-                  />
-                </div>
-                <h3 className="text-2xl font-serif font-semibold text-coffee-800 mb-2">
-                  {member.name}
-                </h3>
-                <p className="text-forest-600 font-medium mb-4">
-                  {member.role}
-                </p>
-                <p className="text-coffee-600 leading-relaxed">
-                  {member.bio}
-                </p>
-              </div>
-            ))}
+
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-6 text-lg text-coffee-600 leading-relaxed">
+              <p>
+                Jacob "Coco" Sebag is a true renaissance man — a gourmet, a creative, and a host at heart. Long before Café Coco came to life, Jacob's passion for food and hospitality was already part of his story. In the 1980s, he owned and operated Le Triomphe, a celebrated French restaurant in Long Island City known for its classic dishes, fine wines, and spirited neighborhood charm.
+              </p>
+              <p>
+                In the decades since, Jacob built a distinguished career as a New York attorney, known for his intellect, integrity, and keen sense of human connection — qualities that also define his approach to hospitality. Beyond the courtroom, he's an artist of many forms: he has appeared in several films, including Sidney Pollack's final movie, <em>The Interpreter</em>, where he portrayed the French Ambassador.
+              </p>
+              <p>
+                For those who know him best, Café Coco feels inevitable. Jacob's lifelong love of coffee, bread, and sweets, combined with his joy in gathering people around good conversation and beautiful food, made this next chapter only a matter of time.
+              </p>
+              <p>
+                Café Coco is his newest creation — a place where community, creativity, and indulgence meet. It's where Jacob's worlds come together: the elegance of a French café, the warmth of a host who treats every guest like family, and the perfectionism of a man who believes that even a croissant should have soul.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -175,12 +146,12 @@ export default function AboutPage() {
                 Our Coffee Journey
               </h2>
               <div className="space-y-6 text-lg leading-relaxed">
-                <p className="text-cream-200">
+                <p className="text-yellow-200">
                   We work directly with coffee farmers in Ethiopia, Guatemala, and Colombia, 
                   ensuring fair prices and sustainable farming practices. Our small-batch roasting 
                   process highlights the unique characteristics of each origin.
                 </p>
-                <p className="text-cream-200">
+                <p className="text-yellow-200">
                   From the moment the green beans arrive at our roastery to the final pour in 
                   your cup, every step is carefully monitored to deliver the perfect balance of 
                   flavor, aroma, and satisfaction that our customers have come to expect.
@@ -191,34 +162,34 @@ export default function AboutPage() {
             
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <Clock className="w-6 h-6 text-cream-300 flex-shrink-0" />
+                <Clock className="w-6 h-6 text-yellow-300 flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-cream-100 mb-1">Fresh Daily</h4>
-                  <p className="text-cream-200">All pastries made fresh each morning before we open</p>
+                  <h4 className="font-semibold text-yellow-100 mb-1">Fresh Daily</h4>
+                  <p className="text-yellow-200">All pastries made fresh each morning before we open</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-4">
-                <Users className="w-6 h-6 text-cream-300 flex-shrink-0" />
+                <Users className="w-6 h-6 text-yellow-300 flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-cream-100 mb-1">Community First</h4>
-                  <p className="text-cream-200">Supporting local events and partnering with nearby businesses</p>
+                  <h4 className="font-semibold text-yellow-100 mb-1">Community First</h4>
+                  <p className="text-yellow-200">Supporting local events and partnering with nearby businesses</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-4">
-                <Leaf className="w-6 h-6 text-cream-300 flex-shrink-0" />
+                <Leaf className="w-6 h-6 text-yellow-300 flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-cream-100 mb-1">Eco-Conscious</h4>
-                  <p className="text-cream-200">Compostable cups, recycling programs, and minimal waste practices</p>
+                  <h4 className="font-semibold text-yellow-100 mb-1">Eco-Conscious</h4>
+                  <p className="text-yellow-200">Compostable cups, recycling programs, and minimal waste practices</p>
                 </div>
               </div>
             </div>
           </div>
           
           <div className="text-center mt-16">
-            <OrderButton size="lg" text="Experience Our Coffee" className="bg-cream-600 text-coffee-800 hover:bg-cream-500" />
-            <p className="mt-4 text-cream-300">
+            <OrderButton size="lg" text="Experience Our Coffee" className="bg-yellow-600 text-coffee-800 hover:bg-yellow-500" />
+            <p className="mt-4 text-yellow-300">
               Visit us today and taste the difference that passion and quality make
             </p>
           </div>

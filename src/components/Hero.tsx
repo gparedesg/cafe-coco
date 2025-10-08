@@ -17,7 +17,7 @@ export default function Hero() {
       
       <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 animate-fade-in">
-          Welcome to <span className="text-cream-300">Café Coco</span>
+          Welcome to <span className="text-yellow-300">Café Coco</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 opacity-90 animate-slide-up">
           Where every cup tells a story of exceptional coffee, fresh pastries, and warm hospitality

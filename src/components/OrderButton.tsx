@@ -20,7 +20,7 @@ export default function OrderButton({
   }
 
   const handleClick = () => {
-    window.open('https://toast.pos.com', '_blank', 'noopener,noreferrer')
+    window.open('https://order.toasttab.com/online/cafe-coco', '_blank', 'noopener,noreferrer')
   }
 
   return (
