@@ -13,12 +13,28 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    
-    alert('Thank you for your message! We\'ll get back to you soon.')
-    setFormData({ name: '', email: '', message: '' })
-    setIsSubmitting(false)
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to send message')
+      }
+
+      alert('Thank you for your message! We\'ll get back to you soon.')
+      setFormData({ name: '', email: '', message: '' })
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      alert('Sorry, there was an error sending your message. Please try again or email us directly at hello@cafe-coco.com')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

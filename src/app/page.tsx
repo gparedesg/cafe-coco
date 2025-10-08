@@ -80,16 +80,24 @@ export default function Home() {
 
               {/* Signup bar */}
               <form
+                action="https://cafe-coco.us12.list-manage.com/subscribe/post?u=adb595f2af4e4340a48fc7fb5&id=6154f437d2"
+                method="POST"
+                target="_blank"
                 className="mt-8 flex w-full max-w-xl rounded-2xl bg-white/90 backdrop-blur border border-yellow-300 shadow-sm overflow-hidden"
                 aria-label="Sign up for Coffee Raves updates"
               >
                 <input
                   type="email"
+                  name="EMAIL"
                   required
                   placeholder="Enter your email"
                   className="w-full px-4 py-3.5 text-coffee-900 placeholder:text-coffee-400 focus:outline-none"
                   aria-label="Email address"
                 />
+                {/* Hidden bot prevention field */}
+                <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
+                  <input type="text" name="b_adb595f2af4e4340a48fc7fb5_6154f437d2" tabIndex={-1} defaultValue="" />
+                </div>
                 <button
                   type="submit"
                   className="shrink-0 px-5 sm:px-6 py-3.5 bg-coffee-700 text-yellow-50 font-medium hover:bg-coffee-800 transition-colors"
@@ -147,12 +155,14 @@ export default function Home() {
                     </div>
 
                     <div className="mt-6">
-                      <button
-                        type="button"
-                        className="w-full py-3.5 rounded-xl bg-coffee-700 text-yellow-50 font-medium hover:bg-coffee-800 transition-colors"
+                      <a
+                        href="https://cafe-coco.us12.list-manage.com/subscribe?u=adb595f2af4e4340a48fc7fb5&id=6154f437d2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block w-full py-3.5 rounded-xl bg-coffee-700 text-yellow-50 font-medium hover:bg-coffee-800 transition-colors text-center"
                       >
                         Get Notified
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
