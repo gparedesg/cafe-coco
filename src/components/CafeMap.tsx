@@ -1,6 +1,6 @@
 'use client'
 
-import { Map, Marker } from '@vis.gl/react-google-maps'
+import { Map, AdvancedMarker } from '@vis.gl/react-google-maps'
 
 const CAFE_LOCATION = {
   lat: 40.74752125618898, // Exact coordinates from Google Maps
@@ -22,7 +22,7 @@ export default function CafeMap({ className }: CafeMapProps) {
         style={{ width: '100%', height: '100%' }}
         mapId="cafe-coco-map"
       >
-        <Marker
+        <AdvancedMarker
           position={CAFE_LOCATION}
           title="Café Coco"
         />
