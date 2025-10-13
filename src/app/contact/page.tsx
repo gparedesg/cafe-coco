@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import ContactForm from '@/components/ContactForm'
-import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Twitter } from 'lucide-react'
+import { MapPin, Mail, Clock, Instagram, Facebook, Twitter } from 'lucide-react'
 import GoogleMapsProvider from '@/components/GoogleMapsProvider'
 import CafeMap from '@/components/CafeMap'
 
@@ -44,18 +44,12 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <Phone className="w-8 h-8 text-forest-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="text-xl font-semibold text-coffee-800 mb-2">Phone</h3>
-                    <p className="text-coffee-600 text-lg">(555) 123-COCO</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
                   <Mail className="w-8 h-8 text-forest-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-semibold text-coffee-800 mb-2">Email</h3>
-                    <p className="text-coffee-600 text-lg">hello@coco-cafe.com</p>
+                    <a href="mailto:hello@cafe-coco.com" className="text-coffee-600 text-lg hover:text-forest-600 transition-colors">
+                      hello@cafe-coco.com
+                    </a>
                   </div>
                 </div>
 
@@ -65,15 +59,11 @@ export default function ContactPage() {
                     <h3 className="text-xl font-semibold text-coffee-800 mb-2">Hours</h3>
                     <div className="space-y-2 text-coffee-600">
                       <div className="flex justify-between items-center">
-                        <span>Monday - Friday</span>
-                        <span className="font-medium">6:30 AM - 6:00 PM</span>
+                        <span>Monday</span>
+                        <span className="font-medium">Closed</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span>Saturday</span>
-                        <span className="font-medium">7:00 AM - 7:00 PM</span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span>Sunday</span>
+                        <span>Tuesday - Sunday</span>
                         <span className="font-medium">7:00 AM - 5:00 PM</span>
                       </div>
                     </div>
@@ -149,35 +139,35 @@ export default function ContactPage() {
             <h2 className="text-3xl font-serif font-bold mb-6">
               Questions or Special Requests?
             </h2>
-            <p className="text-xl text-yellow-200 mb-8 max-w-3xl mx-auto">
-              Whether you&apos;re planning an event, have dietary restrictions, or just want to chat about coffee, 
-              we&apos;re here to help. Don&apos;t hesitate to reach out!
+            <p className="text-xl text-yellow-200 mb-8 mx-auto">
+              Planning an event? Have questions? <br />
+              Please contact us via email or stop by Cafe Coco ...we look forward to hearing from you.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <div className="text-center">
-                <div className="bg-forest-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Phone className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="font-semibold text-yellow-100 mb-2">Call Us</h3>
-                <p className="text-yellow-300 text-sm">Quick questions or immediate assistance</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-forest-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-3xl mx-auto">
+              <a
+                href="mailto:hello@cafe-coco.com"
+                className="text-center hover:transform hover:scale-105 transition-all duration-200"
+              >
+                <div className="bg-forest-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 hover:bg-forest-500">
                   <Mail className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-yellow-100 mb-2">Send a Message</h3>
                 <p className="text-yellow-300 text-sm">Detailed inquiries or feedback</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-forest-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              </a>
+
+              <a
+                href="https://maps.app.goo.gl/ywry8BaKg47WuEWMA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center hover:transform hover:scale-105 transition-all duration-200"
+              >
+                <div className="bg-forest-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 hover:bg-forest-500">
                   <MapPin className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-yellow-100 mb-2">Visit In Person</h3>
                 <p className="text-yellow-300 text-sm">Nothing beats a face-to-face conversation</p>
-              </div>
+              </a>
             </div>
           </div>
         </div>

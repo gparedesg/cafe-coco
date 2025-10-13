@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import OrderButton from '@/components/OrderButton'
-import { Coffee, Heart, Users, Award, Leaf, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'About Us - Café Coco | Our Story & Mission',
@@ -9,29 +8,6 @@ export const metadata: Metadata = {
 }
 
 export default function AboutPage() {
-  const values = [
-    {
-      icon: <Coffee className="w-8 h-8" />,
-      title: "Quality First",
-      description: "We source our beans directly from sustainable farms and roast them locally to ensure every cup meets our high standards."
-    },
-    {
-      icon: <Heart className="w-8 h-8" />,
-      title: "Community Heart",
-      description: "More than a coffee shop, we're a gathering place where neighbors become friends and every visit feels like coming home."
-    },
-    {
-      icon: <Leaf className="w-8 h-8" />,
-      title: "Sustainable Practices",
-      description: "We're committed to environmental responsibility through ethical sourcing, minimal waste, and eco-friendly packaging."
-    },
-    {
-      icon: <Award className="w-8 h-8" />,
-      title: "Artisan Craftsmanship",
-      description: "Every pastry, tartine, and beverage is crafted by skilled artisans who take pride in their work and attention to detail."
-    }
-  ]
-
   return (
     <div className="min-h-screen">
       <div className="bg-coffee-800 text-white py-20">
@@ -50,27 +26,18 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl font-serif font-bold text-coffee-800 mb-6">
-                Welcome to Café Coco
+                Why LIC?
               </h2>
               <div className="space-y-6 text-lg text-coffee-600 leading-relaxed">
                 <p>
-                  Café Coco was born from a simple yet heartfelt idea: to create a space where people could gather, connect, and share the little joys of life. From the beginning, the vision was clear—bring together the comforting aroma of coffee, the delight of artisan baked goods, and the relaxed joy of brunch at any time of day.
-                </p>
-                <p>
-                  At Café Coco, coffee isn’t just a drink — it’s a ritual, a reason to pause and savor the moment. Our baristas are passionate about every pour, every blend, and every detail that turns a cup into an experience. Alongside that, we partner with artisan bakers who craft breads, pastries, and sweets with the same dedication, bringing their creations fresh to our café each day.
-                </p>
-                <p>
-                  But what truly sets Café Coco apart is the spirit of community. It’s not just a café — it’s a place where friendships spark over lattes, where neighbors gather at long tables, and where the sound of children’s laughter blends with the hum of conversation. Whether you’re starting your morning with a croissant, catching up with a friend over brunch, or enjoying an afternoon cappuccino, Café Coco is a place to feel at home.
-                </p>
-                <p>
-                  At its heart, Café Coco is about more than food and coffee — it’s about belonging. It’s about the laughter that fills the air, the conversations that flow freely, and the friendships that form across tables. Café Coco was established so that every visit feels like more than just a stop — it feels like a connection, a celebration, and a community.
+                  We chose Long Island City for our first Café Coco because it blends creativity, community, and warmth in a way few neighborhoods do. It&apos;s where artists, entrepreneurs, and families cross paths—and where people still take the time to connect. Jacob &quot;Coco&quot; Sebag has worked in LIC since 1983, so opening here feels like coming full circle. We wanted to create something personal and inviting: the smell of fresh bread, the smooth taste of great coffee, the sweetness of a pistachio croissant. LIC&apos;s mix of artistry and authenticity makes it the perfect place for Café Coco to call home.
                 </p>
               </div>
             </div>
             <div className="relative">
               <Image
                 src="/about-hero.jpg"
-                alt="Jacob Sebag roasting coffee beans at Café Coco"
+                alt="Jacob Sebag at Café Coco"
                 width={600}
                 height={400}
                 className="rounded-2xl shadow-2xl"
@@ -82,31 +49,34 @@ export default function AboutPage() {
 
       <section className="py-20 bg-yellow-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-coffee-800 mb-4">
-              Our Values
-            </h2>
-            <p className="text-xl text-coffee-600 max-w-3xl mx-auto">
-              These principles guide everything we do, from sourcing our beans to serving our community
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {values.map((value, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center mb-4">
-                  <div className="text-forest-600 mr-4">
-                    {value.icon}
-                  </div>
-                  <h3 className="text-2xl font-serif font-semibold text-coffee-800">
-                    {value.title}
-                  </h3>
-                </div>
-                <p className="text-coffee-600 leading-relaxed">
-                  {value.description}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div>
+              <h2 className="text-4xl font-serif font-bold text-coffee-800 mb-6">
+                Our Design Story
+              </h2>
+              <div className="space-y-6 text-lg text-coffee-600 leading-relaxed">
+                <p>
+                  Café Coco was designed to feel warm, open, and welcoming from the moment you walk in. The white brick walls bring light and texture, while concrete grey tones nod to the city we love—modern, a little industrial, but never cold. Our sunflower yellow adds the warmth we&apos;re known for, a small burst of color that feels cheerful and alive.
+                </p>
+                <p>
+                  Nothing here is overdone. The design is simple, with details that feel personal and lasting. It&apos;s a space built for connection—a place where the smell of coffee, the sound of conversation, and the comfort of beautiful surroundings come together naturally.
                 </p>
               </div>
-            ))}
+            </div>
+
+            <div>
+              <h2 className="text-4xl font-serif font-bold text-coffee-800 mb-6">
+                The Heart of Our Menu
+              </h2>
+              <div className="space-y-6 text-lg text-coffee-600 leading-relaxed">
+                <p>
+                  The French spirit runs through everything we serve. From the buttery layers of our croissants to the balance of sweetness and texture in every pastry, the menu reflects Coco&apos;s lifelong love of French cafés and simple, beautiful food. Our croissants are made with butter and flour imported from France—and you&apos;ll taste the difference in every bite.
+                </p>
+                <p>
+                  The pain au chocolat holds a special place in our story—it&apos;s an homage to the snack Coco&apos;s mother made for him each afternoon when he came home from school. We hope the children of Long Island City grow up enjoying it just as much.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -152,57 +122,24 @@ export default function AboutPage() {
 
       <section className="py-20 bg-coffee-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-serif font-bold mb-6">
-                Our Coffee Journey
-              </h2>
-              <div className="space-y-6 text-lg leading-relaxed">
-                <p className="text-yellow-200">
-                  We work directly with coffee farmers in Ethiopia, Guatemala, and Colombia, 
-                  ensuring fair prices and sustainable farming practices. Our small-batch roasting 
-                  process highlights the unique characteristics of each origin.
-                </p>
-                <p className="text-yellow-200">
-                  From the moment the green beans arrive at our roastery to the final pour in 
-                  your cup, every step is carefully monitored to deliver the perfect balance of 
-                  flavor, aroma, and satisfaction that our customers have come to expect.
-                </p>
-              </div>
-              
-            </div>
-            
-            <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <Clock className="w-6 h-6 text-yellow-300 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold text-yellow-100 mb-1">Fresh Daily</h4>
-                  <p className="text-yellow-200">All pastries made fresh each morning before we open</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-4">
-                <Users className="w-6 h-6 text-yellow-300 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold text-yellow-100 mb-1">Community First</h4>
-                  <p className="text-yellow-200">Supporting local events and partnering with nearby businesses</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-4">
-                <Leaf className="w-6 h-6 text-yellow-300 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold text-yellow-100 mb-1">Eco-Conscious</h4>
-                  <p className="text-yellow-200">Compostable cups, recycling programs, and minimal waste practices</p>
-                </div>
-              </div>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-serif font-bold mb-8 text-center">
+              Our Partners
+            </h2>
+            <div className="space-y-6 text-lg text-yellow-200 leading-relaxed">
+              <p>
+                At Café Coco, we partner with makers who share our love for quality and care. Our pastries and breads come from La Bicyclette Bakery, where every loaf and croissant is baked using time-honored French methods and the finest ingredients including butter and flour imported from France.
+              </p>
+              <p>
+                Our coffee is roasted in Brooklyn by Stone Street Coffee in small batches, ensuring exceptional freshness and flavor. The blend served at Café Coco is crafted exclusively for us—a smooth, balanced roast that pairs perfectly with a buttery croissant or a quiet morning moment.
+              </p>
             </div>
           </div>
-          
+
           <div className="text-center mt-16">
-            <OrderButton size="lg" text="Experience Our Coffee" className="bg-yellow-600 text-coffee-800 hover:bg-yellow-500" />
+            <OrderButton size="lg" text="Experience Café Coco" className="bg-yellow-600 text-coffee-800 hover:bg-yellow-500" />
             <p className="mt-4 text-yellow-300">
-              Visit us today and taste the difference that passion and quality make
+              Visit us today and taste the difference
             </p>
           </div>
         </div>
