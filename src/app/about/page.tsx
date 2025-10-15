@@ -70,7 +70,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 text-lg text-coffee-600 leading-relaxed">
                 <p>
-                  The French spirit runs through everything we serve. From the buttery layers of our croissants to the balance of sweetness and texture in every pastry, the menu reflects Coco&apos;s lifelong love of French cafés and simple, beautiful food. Our croissants are made with butter and flour imported from France—and you&apos;ll taste the difference in every bite.
+                  The French spirit runs through everything we serve. From the buttery layers of our croissants to the balance of sweetness and texture in every pastry, the menu reflects Coco&apos;s lifelong love of French cafés and simple, beautiful food. Our croissants are made with French imported &quot;Isigny Sainte-Mere&quot; butter and &quot;Moulins Bourgeois&quot; flour imported from France—and you&apos;ll taste the difference in every bite.
                 </p>
                 <p>
                   The pain au chocolat holds a special place in our story—it&apos;s an homage to the snack Coco&apos;s mother made for him each afternoon when he came home from school. We hope the children of Long Island City grow up enjoying it just as much.
@@ -128,7 +128,7 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-6 text-lg text-yellow-200 leading-relaxed">
               <p>
-                At Café Coco, we partner with makers who share our love for quality and care. Our pastries and breads come from La Bicyclette Bakery, where every loaf and croissant is baked using time-honored French methods and the finest ingredients including butter and flour imported from France.
+                At Café Coco, we partner with professionals who share our love for quality and care. Our pastries and breads come from La Bicyclette Bakery, where every loaf and croissant is baked using time-honored French methods and the finest ingredients including butter and flour imported from France.
               </p>
               <p>
                 Our coffee is roasted in Brooklyn by Stone Street Coffee in small batches, ensuring exceptional freshness and flavor. The blend served at Café Coco is crafted exclusively for us—a smooth, balanced roast that pairs perfectly with a buttery croissant or a quiet morning moment.
