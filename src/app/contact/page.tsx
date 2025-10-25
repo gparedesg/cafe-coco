@@ -63,8 +63,12 @@ export default function ContactPage() {
                         <span className="font-medium">Closed</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span>Tuesday - Sunday</span>
-                        <span className="font-medium">7:00 AM - 5:00 PM</span>
+                        <span>Tuesday - Friday</span>
+                        <span className="font-medium">7:30 AM - 5:30 PM</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span>Saturday - Sunday</span>
+                        <span className="font-medium">8:30 AM - 5:30 PM</span>
                       </div>
                     </div>
                   </div>
@@ -76,24 +80,24 @@ export default function ContactPage() {
                   Follow Us
                 </h3>
                 <div className="flex space-x-6">
-                  <a 
-                    href="https://instagram.com/cocoespressobar"
+                  <a
+                    href="https://instagram.com/cafecoco.lic"
                     target="_blank"
                     className="text-coffee-600 hover:text-forest-600 transition-colors"
                     aria-label="Follow us on Instagram"
                   >
                     <Instagram className="w-8 h-8" />
                   </a>
-                  <a 
-                    href="https://facebook.com/cocoespressobar"
+                  <a
+                    href="https://facebook.com/cafecoco.lic"
                     target="_blank"
                     className="text-coffee-600 hover:text-forest-600 transition-colors"
                     aria-label="Follow us on Facebook"
                   >
                     <Facebook className="w-8 h-8" />
                   </a>
-                  <a 
-                    href="https://twitter.com/cocoespressobar"
+                  <a
+                    href="https://twitter.com/cafecoco.lic"
                     target="_blank"
                     className="text-coffee-600 hover:text-forest-600 transition-colors"
                     aria-label="Follow us on Twitter"

@@ -7,7 +7,8 @@ interface LocationCardProps {
 export default function LocationCard({ className = '' }: LocationCardProps) {
   const hours = [
     { day: 'Monday', time: 'Closed' },
-    { day: 'Tuesday - Sunday', time: '7:00 AM - 5:00 PM' }
+    { day: 'Tuesday - Friday', time: '7:30 AM - 5:30 PM' },
+    { day: 'Saturday - Sunday', time: '8:30 AM - 5:30 PM' }
   ]
 
   return (
