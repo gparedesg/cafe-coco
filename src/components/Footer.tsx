@@ -22,7 +22,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://instagram.com/cocoespressobar"
+                href="https://instagram.com/cafecoco.lic"
                 target="_blank"
                 className="flex items-center justify-center w-10 h-10 bg-yellow-300 text-coffee-800 rounded-full hover:bg-yellow-400 hover:scale-110 transition-all duration-200"
                 aria-label="Visit our Instagram"
@@ -30,7 +30,7 @@ export default function Footer() {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://facebook.com/cocoespressobar"
+                href="https://facebook.com/cafecoco.lic"
                 target="_blank"
                 className="flex items-center justify-center w-10 h-10 bg-yellow-300 text-coffee-800 rounded-full hover:bg-yellow-400 hover:scale-110 transition-all duration-200"
                 aria-label="Visit our Facebook"
@@ -38,7 +38,7 @@ export default function Footer() {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://twitter.com/cocoespressobar"
+                href="https://twitter.com/cafecoco.lic"
                 target="_blank"
                 className="flex items-center justify-center w-10 h-10 bg-yellow-300 text-coffee-800 rounded-full hover:bg-yellow-400 hover:scale-110 transition-all duration-200"
                 aria-label="Visit our Twitter"
@@ -76,7 +76,8 @@ export default function Footer() {
                 <Clock className="w-4 h-4 text-yellow-300 mt-1 flex-shrink-0" />
                 <div className="text-yellow-200 text-sm">
                   <p>Monday: Closed</p>
-                  <p>Tuesday - Sunday: 7:00 AM - 5:00 PM</p>
+                  <p>Tuesday - Friday: 7:30 AM - 5:30 PM</p>
+                  <p>Saturday - Sunday: 8:30 AM - 5:30 PM</p>
                 </div>
               </div>
             </div>
