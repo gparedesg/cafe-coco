@@ -3,201 +3,457 @@ export interface MenuItem {
   name: string
   description: string
   category: string
+  price: string
   isPopular?: boolean
   isGlutenFree?: boolean
   isVegan?: boolean
 }
 
+export interface MenuCategory {
+  id: string
+  name: string
+  description: string
+  items: MenuItem[]
+}
+
 export const featuredItems: MenuItem[] = [
   {
     id: 'pistachio-croissant',
-    name: 'Pistachio Croissant',
-    description: 'Buttery, flaky croissant filled with rich pistachio cream - our most popular pastry',
-    category: 'pastries',
+    name: 'Pistachio',
+    description: 'Pistachio cream with crushed pistachios',
+    category: 'croissants',
+    price: '7.75',
     isPopular: true
   },
   {
-    id: 'coco-breakfast-sandwich',
-    name: 'Coco Breakfast Sandwich',
-    description: 'House-made English muffin with cage-free scrambled eggs, aged cheddar, and your choice of bacon or avocado',
-    category: 'eggs',
+    id: 'benedicto',
+    name: 'Benedict',
+    description: 'Fluffy croissant or sourdough with poached salmon, avocado and hollandaise, house salad',
+    category: 'coco-specials',
+    price: '19.50',
     isPopular: true
   },
   {
-    id: 'classic-acai-bowl',
-    name: 'Classic Acai Bowl',
-    description: 'Organic acai berries blended with banana, topped with granola, fresh berries, and coconut flakes',
-    category: 'bowls',
+    id: 'acai-treat',
+    name: 'Acai Treat',
+    description: 'Acai, granola, mixed fruits, chia, homemade butter, honey',
+    category: 'sweet-treats',
+    price: '14.50',
     isPopular: true
   },
   {
-    id: 'green-power-smoothie',
-    name: 'Green Power Smoothie',
-    description: 'Spinach, kale, banana, mango, and coconut water - a nutritious powerhouse',
-    category: 'smoothies',
+    id: 'mediterranean-salad',
+    name: 'Mediterranean',
+    description: 'Mixed greens, tomato, cherry tomatoes, cucumbers, feta, red onions, olives, pita, feta cheese',
+    category: 'salads',
+    price: '15.50',
     isPopular: true
   }
 ]
 
-export const menuCategories = [
+export const menuCategories: MenuCategory[] = [
   {
-    id: 'pastries',
-    name: 'Fresh Pastries',
-    description: 'House-made daily with premium ingredients',
+    id: 'artisan-bread',
+    name: 'Artisan Bread',
+    description: 'Authentic French breads, baked daily with organic flour',
     items: [
       {
-        id: 'pistachio-croissant',
-        name: 'Pistachio Croissant',
-        description: 'Buttery, flaky croissant filled with rich pistachio cream - our most popular pastry',
-        category: 'pastries',
-        isPopular: true
+        id: 'our-baguette',
+        name: 'Our Baguette',
+        description: 'Authentic French baguette, baked daily with organic French flour',
+        category: 'artisan-bread',
+        price: '4.50'
       },
       {
-        id: 'kouign-amann',
-        name: 'Kouign-Amann',
-        description: 'Traditional Breton pastry with caramelized sugar layers and buttery, crispy texture',
-        category: 'pastries'
+        id: 'campagne-sourdough',
+        name: 'Campagne Sourdough',
+        description: 'Rustic organic country bread, blessed with sea salt, butter, and bee pollen',
+        category: 'artisan-bread',
+        price: '8.00'
       },
       {
-        id: 'seasonal-fruit-tart',
-        name: 'Seasonal Fruit Tart',
-        description: 'Delicate pastry shell filled with vanilla custard and topped with fresh seasonal fruits',
-        category: 'pastries'
+        id: 'seeded-campagne',
+        name: 'Seeded Campagne',
+        description: 'Rustic organic country loaf with sesame, poppy, and sunflower seeds',
+        category: 'artisan-bread',
+        price: '8.50'
       },
       {
-        id: 'chocolate-croissant',
-        name: 'Pain au Chocolat',
-        description: 'Classic French pastry with rich dark chocolate batons wrapped in buttery layers',
-        category: 'pastries'
+        id: 'pain-sportif',
+        name: 'Pain Sportif',
+        description: 'Sourdough loaf with cranberries, walnuts, figs, apricots, and pumpkin seeds',
+        category: 'artisan-bread',
+        price: '8.00'
+      },
+      {
+        id: 'olive-bread',
+        name: 'Olive Bread',
+        description: 'Rustic loaf with Kalamata olives and herbs - lovely toasted and olive oiled',
+        category: 'artisan-bread',
+        price: '8.25'
+      },
+      {
+        id: 'le-sandwich-combo',
+        name: 'Le Sandwich Combo',
+        description: 'Bowl of 3 seasonal sandwich on half a baguette - served with drip coffee',
+        category: 'artisan-bread',
+        price: '14.50'
+      },
+      {
+        id: 'sweet-combo',
+        name: 'Sweet Combo',
+        description: 'Half baguette with French butter and seasonal jam - served with drip coffee',
+        category: 'artisan-bread',
+        price: '9.75'
       }
     ]
   },
   {
-    id: 'tartines',
-    name: 'Artisan Tartines',
-    description: 'Open-faced toasts on house-baked sourdough',
+    id: 'croissants',
+    name: 'Croissants',
+    description: 'Flaky French pastries made with premium butter',
     items: [
       {
-        id: 'avocado-tartine',
-        name: 'Avocado Tartine',
-        description: 'Smashed avocado with lime, sea salt, and red pepper flakes. Add a poached egg for $3',
-        category: 'tartines',
+        id: 'our-croissant',
+        name: 'Our Croissant',
+        description: 'Flaky French classic pastry',
+        category: 'croissants',
+        price: '4.75'
+      },
+      {
+        id: 'pain-au-chocolat',
+        name: 'Pain au Chocolat',
+        description: 'Classic pastry with dark valrhona',
+        category: 'croissants',
+        price: '5.25'
+      },
+      {
+        id: 'almond-croissant',
+        name: 'Almond Croissant',
+        description: 'Filled with fresh almond paste & toasted almonds',
+        category: 'croissants',
+        price: '5.75'
+      },
+      {
+        id: 'pistachio-croissant',
+        name: 'Pistachio',
+        description: 'Pistachio cream with crushed pistachios',
+        category: 'croissants',
+        price: '7.75',
         isPopular: true
       },
       {
-        id: 'smoked-salmon-tartine',
-        name: 'Smoked Salmon Tartine',
-        description: 'House-cured salmon with cream cheese, capers, red onion, and fresh dill',
-        category: 'tartines'
+        id: 'raspberry-croissant',
+        name: 'Raspberry',
+        description: 'Vanilla cream with fresh raspberries',
+        category: 'croissants',
+        price: '9.75'
       },
       {
-        id: 'caprese-tartine',
-        name: 'Caprese Tartine',
-        description: 'Fresh mozzarella, heirloom tomatoes, basil pesto, and balsamic reduction',
-        category: 'tartines'
+        id: 'strawberry-croissant',
+        name: 'Strawberry',
+        description: 'Strawberry vanilla cream, fresh strawberries',
+        category: 'croissants',
+        price: '9.75'
+      }
+    ]
+  },
+  {
+    id: 'pastries',
+    name: 'Pastries',
+    description: 'House-made pastries with premium ingredients',
+    items: [
+      {
+        id: 'nutella-banana-bread',
+        name: 'Nutella Banana Bread',
+        description: 'Moist banana bread swirled with creamy Nutella',
+        category: 'pastries',
+        price: '6.75'
       },
       {
-        id: 'sweet-tartine',
-        name: 'Sweet Tartine Selection',
-        description: 'Choose from almond butter & honey, Nutella & banana, or ricotta & fig jam',
-        category: 'tartines'
+        id: 'double-choco-muffin',
+        name: 'Double Choco Muffin',
+        description: 'Soft choco chip muffin - extra fluffy',
+        category: 'pastries',
+        price: '5.75'
+      },
+      {
+        id: 'blueberry-crumb-muffin',
+        name: 'Blueberry Crumb Muffin',
+        description: 'Moist muffin with buttery crumble',
+        category: 'pastries',
+        price: '5.75'
+      },
+      {
+        id: 'vegan-carrot-muffin',
+        name: 'Vegan Carrot Muffin',
+        description: 'Moist, spiced, and very tasty',
+        category: 'pastries',
+        price: '5.75',
+        isVegan: true
+      },
+      {
+        id: 'lemon-poppy',
+        name: 'Lemon Poppy',
+        description: 'Bright, zesty, and soft with a delicate crunch',
+        category: 'pastries',
+        price: '5.75'
+      },
+      {
+        id: 'sea-salt-choco-chip',
+        name: 'Sea Salt Choco Chip',
+        description: 'Chewy, buttery, with a hint of sea salt',
+        category: 'pastries',
+        price: '6.95'
+      },
+      {
+        id: 'toffee-cookie',
+        name: 'One Toffee Cookie',
+        description: 'Gooey, with buttery toffee bits',
+        category: 'pastries',
+        price: '5.95'
+      },
+      {
+        id: 'fruit-tart',
+        name: 'Fruit Tart',
+        description: 'Buttery, flaky, filled with sweet-tart cherry compote',
+        category: 'pastries',
+        price: '6.00'
+      }
+    ]
+  },
+  {
+    id: 'biscuits',
+    name: 'Biscuits',
+    description: 'Buttery, flaky biscuits and scones',
+    items: [
+      {
+        id: 'cheddar-chive-scone',
+        name: 'Cheddar & Chive Scone',
+        description: 'Buttery cheddar and chive scone - golden, flaky, and delicious',
+        category: 'biscuits',
+        price: '6.25'
+      },
+      {
+        id: 'rosemary-honey',
+        name: 'Rosemary Honey',
+        description: 'Fluffy biscuit with rosemary-infused honey - buttery and more perfection',
+        category: 'biscuits',
+        price: '6.25'
+      },
+      {
+        id: 'everything-biscuit',
+        name: 'Everything',
+        description: 'Classic New York everything seasoning - sesame, poppy, garlic & onion',
+        category: 'biscuits',
+        price: '6.50'
+      },
+      {
+        id: 'incognito-beg',
+        name: 'Incognito B.E.G',
+        description: 'Soft-baked oatmeal with nuts, seeds & dried fruit - nutritious, guilt-free, vegan!',
+        category: 'biscuits',
+        price: '6.50',
+        isVegan: true
+      }
+    ]
+  },
+  {
+    id: 'coco-specials',
+    name: 'Coco Specials',
+    description: 'Signature brunch dishes crafted with care',
+    items: [
+      {
+        id: 'benedicto',
+        name: 'Benedict',
+        description: 'Fluffy croissant or sourdough with poached salmon, avocado and hollandaise, house salad',
+        category: 'coco-specials',
+        price: '19.50',
+        isPopular: true
+      },
+      {
+        id: 'bird-nest-coco-eggs',
+        name: 'Bird Nest Coco Eggs',
+        description: 'House salty brioche nest, poach eggs, garlic aioli, chorizo popcorn salsa, sourdough salt oil',
+        category: 'coco-specials',
+        price: '18.75'
+      },
+      {
+        id: 'coconut-pancakes',
+        name: 'Coconut Pancakes',
+        description: 'Three coconut pancakes with yogurt sauce, lemon curd & crispy toasted balls',
+        category: 'coco-specials',
+        price: '14.85'
       }
     ]
   },
   {
     id: 'eggs',
-    name: 'Egg Dishes',
+    name: 'Eggs',
     description: 'Farm-fresh eggs prepared to perfection',
     items: [
       {
-        id: 'coco-breakfast-sandwich',
-        name: 'Coco Breakfast Sandwich',
-        description: 'House-made English muffin with cage-free scrambled eggs, aged cheddar, and your choice of bacon or avocado',
+        id: 'green-egg-sandwich',
+        name: 'Green Egg Sandwich',
+        description: 'Warm brioche filled with scramble eggs, spinach, pesto, avocado, fresh tomato, arugula',
         category: 'eggs',
-        isPopular: true
+        price: '14.95'
       },
       {
-        id: 'zucchini-pancakes',
-        name: 'Zucchini Pancakes',
-        description: 'Light and fluffy gluten-free pancakes made with fresh zucchini, served with maple syrup',
+        id: 'breakfast-sandwich',
+        name: 'Breakfast Sandwich',
+        description: 'Warm brioche filled with scramble eggs with cheddar, bacon, served with house salad',
         category: 'eggs',
-        isGlutenFree: true
+        price: '15.50'
       },
       {
-        id: 'build-omelette',
-        name: 'Build Your Own Omelette',
-        description: 'Three-egg omelette with your choice of cheese, vegetables, and proteins',
-        category: 'eggs'
+        id: 'our-founder-sandwich',
+        name: 'Our Founder Sandwich',
+        description: 'Scrambled eggs & swiss cheese on our famous baguette, served to perfection',
+        category: 'eggs',
+        price: '8.75'
       },
       {
-        id: 'shakshuka',
-        name: 'Shakshuka',
-        description: 'Poached eggs in spiced tomato sauce with peppers, onions, and fresh herbs',
-        category: 'eggs'
+        id: 'little-green-variation',
+        name: 'Little Green Variation',
+        description: 'Rustic english muffin with scrambled eggs, arugula, sun-dried cherry tomatoes, pumpkin oil',
+        category: 'eggs',
+        price: '16.50'
+      },
+      {
+        id: 'frittata-of-the-day',
+        name: 'Frittata of the Day',
+        description: 'Loaded with seasonal house salad & multigrain toast',
+        category: 'eggs',
+        price: '15.50'
       }
     ]
   },
   {
-    id: 'smoothies',
-    name: 'Fresh Smoothies',
-    description: 'Nutrient-packed blends made to order',
+    id: 'salads',
+    name: 'Salads',
+    description: 'Fresh, vibrant salads (Add chicken +$8)',
     items: [
       {
-        id: 'green-power-smoothie',
-        name: 'Green Power Smoothie',
-        description: 'Spinach, kale, banana, mango, and coconut water - a nutritious powerhouse',
-        category: 'smoothies',
+        id: 'mediterranean-salad',
+        name: 'Mediterranean',
+        description: 'Mixed greens, tomato, cherry tomatoes, cucumbers, feta, red onions, olives, pita, feta cheese',
+        category: 'salads',
+        price: '15.50',
         isPopular: true
       },
       {
-        id: 'berry-blast',
-        name: 'Berry Blast',
-        description: 'Mixed berries, banana, yogurt, and a touch of honey for natural sweetness',
-        category: 'smoothies'
+        id: 'chopped-salad',
+        name: 'Chopped Salad',
+        description: 'Mixed greens, avocado, cherry tomatoes, baby bell pepper, cucumber, boiled egg, walnuts',
+        category: 'salads',
+        price: '16.50'
       },
       {
-        id: 'tropical-paradise',
-        name: 'Tropical Paradise',
-        description: 'Pineapple, mango, coconut milk, and lime - like vacation in a glass',
-        category: 'smoothies'
-      },
-      {
-        id: 'chocolate-pb-smoothie',
-        name: 'Chocolate Peanut Butter',
-        description: 'Banana, peanut butter, cocoa powder, and almond milk - healthy indulgence',
-        category: 'smoothies'
+        id: 'coco-salad',
+        name: 'Coco Salad',
+        description: 'Arugula, fresh apples, brie cheese, kalamata, dried cranberries, balsamic glaze',
+        category: 'salads',
+        price: '16.50'
       }
     ]
   },
   {
-    id: 'bowls',
-    name: 'Nourish Bowls',
-    description: 'Wholesome bowls packed with superfoods',
+    id: 'tartines',
+    name: 'Tartines',
+    description: 'Open-faced toasts on house-baked sourdough',
     items: [
       {
-        id: 'classic-acai-bowl',
-        name: 'Classic Acai Bowl',
-        description: 'Organic acai berries blended with banana, topped with granola, fresh berries, and coconut flakes',
-        category: 'bowls',
+        id: 'avocado-tartine',
+        name: 'Avocado Tartine',
+        description: 'Avocado, sun-dried tomatoes & multigrain - 12 oz',
+        category: 'tartines',
+        price: '13.50'
+      },
+      {
+        id: 'smoked-salmon-tartine',
+        name: 'Smoked Salmon Tartine',
+        description: 'Avocado - 2 oz',
+        category: 'tartines',
+        price: '16.50'
+      },
+      {
+        id: 'caprese-tartine',
+        name: 'Caprese Tartine',
+        description: 'Burrata, tomato, basil pesto, balsamic glaze',
+        category: 'tartines',
+        price: '15.50'
+      },
+      {
+        id: 'roasted-veggie-tartine',
+        name: 'Roasted Veggie Tartine',
+        description: 'Seasonal roasted vegetables on toasted sourdough with hummus, goat cheese and avocado - 12 oz / our bev - 18 oz',
+        category: 'tartines',
+        price: '13.50'
+      },
+      {
+        id: 'spinach-cheese-tart',
+        name: 'Spinach Cheese Tart',
+        description: 'Spinach & flaky cheese pastry, savory',
+        category: 'tartines',
+        price: '6.95'
+      },
+      {
+        id: 'our-daily-galette',
+        name: 'Our Daily Galette',
+        description: 'Cream cheese, smoked salmon, beets & dill on a potato hash',
+        category: 'tartines',
+        price: '15.50'
+      },
+      {
+        id: 'kids-grilled-cheese',
+        name: "Kids' Grilled Cheese",
+        description: 'American & cheddar cheese on challah toast',
+        category: 'tartines',
+        price: '7.50'
+      }
+    ]
+  },
+  {
+    id: 'sweet-treats',
+    name: 'Sweet Treats',
+    description: 'Indulgent breakfast desserts',
+    items: [
+      {
+        id: 'acai-treat',
+        name: 'Acai Treat',
+        description: 'Acai, granola, mixed fruits, chia, homemade butter, honey',
+        category: 'sweet-treats',
+        price: '14.50',
         isPopular: true
       },
       {
         id: 'greek-yogurt-bowl',
-        name: 'Greek Yogurt Granola Bowl',
-        description: 'Thick Greek yogurt with house-made granola, seasonal fruits, and local honey drizzle',
-        category: 'bowls'
+        name: 'Greek Yogurt Bowl',
+        description: 'Greek yogurt, mixed fruits, granola, seeds, nuts, coconut flakes, honey',
+        category: 'sweet-treats',
+        price: '11.50'
       },
       {
-        id: 'pitaya-bowl',
-        name: 'Pitaya Dragon Fruit Bowl',
-        description: 'Vibrant pink dragon fruit blend with tropical toppings and chia seeds',
-        category: 'bowls'
+        id: 'mini-pancakes',
+        name: 'Mini Pancakes',
+        description: 'Fluffy bite-sized pancakes served with maple syrup, butter & your choice of: berries, nutella, banana or powdered sugar',
+        category: 'sweet-treats',
+        price: '12.50'
       },
       {
-        id: 'green-goddess-bowl',
-        name: 'Green Goddess Bowl',
-        description: 'Spirulina-infused smoothie bowl with kiwi, spinach, and superfood toppings',
-        category: 'bowls'
+        id: 'pancakes',
+        name: 'Pancakes',
+        description: '3 fluffy large pancakes served warm with a rich drizzle of sauce or slice and your maple syrup served with whipped butter & powdered sugar',
+        category: 'sweet-treats',
+        price: '16.50'
+      },
+      {
+        id: 'babka-french-toast',
+        name: 'Babka French Toast',
+        description: 'Chocolate babka slices in cinnamon-vanilla french toast and a dusting of powdered sugar',
+        category: 'sweet-treats',
+        price: '14.50'
       }
     ]
   }
