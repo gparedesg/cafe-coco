@@ -67,7 +67,7 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'campagne-sourdough',
         name: 'Campagne Sourdough',
-        description: 'Rustic organic country bread, blessed with sea salt, butter, and bee pollen',
+        description: 'Rustic organic country bread, blended with wheat, barley, and rye flours',
         category: 'artisan-bread',
         price: '8.00'
       },
@@ -81,21 +81,21 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'pain-sportif',
         name: 'Pain Sportif',
-        description: 'Sourdough loaf with cranberries, walnuts, figs, apricots, and pumpkin seeds',
+        description: 'Sourdough loaf with cranberries, hazelnuts, walnuts, and pumpkin seeds',
         category: 'artisan-bread',
         price: '8.00'
       },
       {
         id: 'olive-bread',
         name: 'Olive Bread',
-        description: 'Rustic loaf with Kalamata olives and herbs - lovely toasted and olive oiled',
+        description: 'Rustic loaf with Kalamata and a touch of oregano - perfect for olive lovers',
         category: 'artisan-bread',
         price: '8.25'
       },
       {
         id: 'le-sandwich-combo',
         name: 'Le Sandwich Combo',
-        description: 'Bowl of 3 seasonal sandwich on half a baguette - served with drip coffee',
+        description: 'Brie, fig & arugula sandwich on a half a baguette - served with drop coffee',
         category: 'artisan-bread',
         price: '14.50'
       },
@@ -130,7 +130,7 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'almond-croissant',
         name: 'Almond Croissant',
-        description: 'Filled with fresh almond paste & toasted almonds',
+        description: 'Filled with fresh almond paste & shaved almonds',
         category: 'croissants',
         price: '5.75'
       },
@@ -145,7 +145,7 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'raspberry-croissant',
         name: 'Raspberry',
-        description: 'Vanilla cream with fresh raspberries',
+        description: 'Nutella cream with fresh raspberries',
         category: 'croissants',
         price: '9.75'
       },
@@ -166,7 +166,7 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'nutella-banana-bread',
         name: 'Nutella Banana Bread',
-        description: 'Moist banana bread swirled with creamy Nutella',
+        description: 'Moist banana bread served with creamy Nutella',
         category: 'pastries',
         price: '6.75'
       },
@@ -180,7 +180,7 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'blueberry-crumb-muffin',
         name: 'Blueberry Crumb Muffin',
-        description: 'Moist muffin with buttery crumble',
+        description: 'Moist muffin with fresh blueberries',
         category: 'pastries',
         price: '5.75'
       },
@@ -209,7 +209,7 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'toffee-cookie',
         name: 'One Toffee Cookie',
-        description: 'Gooey, with buttery toffee bits',
+        description: 'Golden, with buttery toffee bits and a hint of caramel',
         category: 'pastries',
         price: '5.95'
       },
@@ -264,9 +264,9 @@ export const menuCategories: MenuCategory[] = [
     description: 'Signature brunch dishes crafted with care',
     items: [
       {
-        id: 'benedicto',
+        id: 'benedict',
         name: 'Benedict',
-        description: 'Fluffy croissant or sourdough with poached salmon, avocado and hollandaise, house salad',
+        description: 'Flaky croissant or sourdough with smoked salmon, topped with pached egg, hollandaise, house salad',
         category: 'coco-specials',
         price: '19.50',
         isPopular: true
@@ -439,7 +439,7 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'mini-pancakes',
         name: 'Mini Pancakes',
-        description: 'Fluffy bite-sized pancakes served with maple syrup, butter & your choice of: berries, nutella, banana or powdered sugar. Choice of: bluberry-caramel, or banana-nutella',
+        description: 'Fluffy bite-sized pancakes served with a drizzle of maple syrup and a dusting of powdered sugar',
         category: 'sweet-treats',
         price: '12.50'
       },
