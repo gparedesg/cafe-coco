@@ -26,7 +26,7 @@ export const featuredItems: MenuItem[] = [
     isPopular: true
   },
   {
-    id: 'benedicto',
+    id: 'benedict',
     name: 'Benedict',
     description: 'Fluffy croissant or sourdough with poached salmon, avocado and hollandaise, house salad',
     category: 'coco-specials',
@@ -44,7 +44,7 @@ export const featuredItems: MenuItem[] = [
   {
     id: 'mediterranean-salad',
     name: 'Mediterranean',
-    description: 'Mixed greens, tomato, cherry tomatoes, cucumbers, feta, red onions, olives, pita, feta cheese',
+    description: 'Mixed greens, tomato, mint, cherry tomatoes, cucumbers, feta, red onions, olives, feta cheese',
     category: 'salads',
     price: '15.50',
     isPopular: true
@@ -249,8 +249,8 @@ export const menuCategories: MenuCategory[] = [
         price: '6.50'
       },
       {
-        id: 'incognito-beg',
-        name: 'Incognito B.E.G',
+        id: 'brekfast-bar',
+        name: 'Breakfast bar',
         description: 'Soft-baked oatmeal with nuts, seeds & dried fruit - nutritious, guilt-free, vegan!',
         category: 'biscuits',
         price: '6.50',
@@ -274,14 +274,14 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'bird-nest-coco-eggs',
         name: 'Bird Nest Coco Eggs',
-        description: 'House salty brioche nest, poach eggs, garlic aioli, chorizo popcorn salsa, sourdough salt oil',
+        description: 'Curly kale salad, shaved potato nests, sunny-side up eggs, sunflower seeds, cruncy chili oil',
         category: 'coco-specials',
         price: '18.75'
       },
       {
-        id: 'coconut-pancakes',
-        name: 'Coconut Pancakes',
-        description: 'Three coconut pancakes with yogurt sauce, lemon curd & crispy toasted balls',
+        id: 'zucchini-pancakes',
+        name: 'Zucchini Pancakes',
+        description: 'Three zucchini pancakes with yogurt sauce, lemon zest, arugula & cherry tomato salad',
         category: 'coco-specials',
         price: '14.85'
       }
@@ -295,35 +295,37 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'green-egg-sandwich',
         name: 'Green Egg Sandwich',
-        description: 'Warm brioche filled with scramble eggs, spinach, pesto, avocado, fresh tomato, arugula',
+        description: 'Warm brioche filled with scramble eggs, spinach, avocado, cucumbers, microgreens & hummus',
         category: 'eggs',
-        price: '14.95'
+        price: '14.95',
+        isPopular: true
       },
       {
         id: 'breakfast-sandwich',
         name: 'Breakfast Sandwich',
-        description: 'Warm brioche filled with scramble eggs with cheddar, bacon, served with house salad',
+        description: 'Scrambled eggs, turkey bacon, avocado, sweet mayo, brioche, served with house salad',
         category: 'eggs',
-        price: '15.50'
+        price: '15.50',
+        isPopular: true
       },
       {
-        id: 'our-founder-sandwich',
-        name: 'Our Founder Sandwich',
-        description: 'Scrambled eggs & swiss cheese on our famous baguette, served to perfection',
+        id: 'our-counter-sandwich',
+        name: 'Our Counter Sandwich',
+        description: 'Scrambled eggs & swiss cheese on our famous brioche, warmed to perfection',
         category: 'eggs',
         price: '8.75'
       },
       {
         id: 'little-green-variation',
         name: 'Little Green Variation',
-        description: 'Rustic english muffin with scrambled eggs, arugula, sun-dried cherry tomatoes, pumpkin oil',
+        description: 'Toasted english muffin with homemade pesto, arugula sun-dried cherry tomatoes & poached eggs',
         category: 'eggs',
         price: '16.50'
       },
       {
-        id: 'frittata-of-the-day',
-        name: 'Frittata of the Day',
-        description: 'Loaded with seasonal house salad & multigrain toast',
+        id: 'omelette-of-the-day',
+        name: 'Omelette of the Day',
+        description: 'Served with avocado, house salad & multigrain toast',
         category: 'eggs',
         price: '15.50'
       }
@@ -345,14 +347,14 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'chopped-salad',
         name: 'Chopped Salad',
-        description: 'Mixed greens, avocado, cherry tomatoes, baby bell pepper, cucumber, boiled egg, walnuts',
+        description: 'Romaine, cherry tomatoes, cucumber, red onion, bell pepper, chickpeas, boiled egg & halloumi cheese',
         category: 'salads',
         price: '16.50'
       },
       {
-        id: 'coco-salad',
-        name: 'Coco Salad',
-        description: 'Arugula, fresh apples, brie cheese, kalamata, dried cranberries, balsamic glaze',
+        id: 'apple-walnut-brie',
+        name: 'Apple, Walnut & Brie',
+        description: 'Arugula, fresh apples, brie cheese, walnuts, dried cranberries, balsamic glaze',
         category: 'salads',
         price: '16.50'
       }
@@ -366,14 +368,14 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'avocado-tartine',
         name: 'Avocado Tartine',
-        description: 'Avocado, sun-dried tomatoes & multigrain - 12 oz',
+        description: 'Avocado, sun-dried tomatoes & multigrain',
         category: 'tartines',
         price: '13.50'
       },
       {
         id: 'smoked-salmon-tartine',
         name: 'Smoked Salmon Tartine',
-        description: 'Avocado - 2 oz',
+        description: 'Avocado',
         category: 'tartines',
         price: '16.50'
       },
@@ -387,7 +389,7 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'roasted-veggie-tartine',
         name: 'Roasted Veggie Tartine',
-        description: 'Seasonal roasted vegetables on toasted sourdough with hummus, goat cheese and avocado - 12 oz / our bev - 18 oz',
+        description: 'Seasonal roasted vegetables on toasted olive bread with homemade hummus & feta cheese',
         category: 'tartines',
         price: '13.50'
       },
@@ -401,7 +403,7 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'our-daily-galette',
         name: 'Our Daily Galette',
-        description: 'Cream cheese, smoked salmon, beets & dill on a potato hash',
+        description: 'Cream cheese, smoked salmon, lemon & dill on a potato base',
         category: 'tartines',
         price: '15.50'
       },
@@ -422,7 +424,7 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'acai-treat',
         name: 'Acai Treat',
-        description: 'Acai, granola, mixed fruits, chia, homemade butter, honey',
+        description: 'Acai, granola, mixed fruits, chia, almond butter, honey',
         category: 'sweet-treats',
         price: '14.50',
         isPopular: true
@@ -437,21 +439,21 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'mini-pancakes',
         name: 'Mini Pancakes',
-        description: 'Fluffy bite-sized pancakes served with maple syrup, butter & your choice of: berries, nutella, banana or powdered sugar',
+        description: 'Fluffy bite-sized pancakes served with maple syrup, butter & your choice of: berries, nutella, banana or powdered sugar. Choice of: bluberry-caramel, or banana-nutella',
         category: 'sweet-treats',
         price: '12.50'
       },
       {
         id: 'pancakes',
         name: 'Pancakes',
-        description: '3 fluffy large pancakes served warm with a rich drizzle of sauce or slice and your maple syrup served with whipped butter & powdered sugar',
+        description: '3 fluffy large pancakes served warm with a rich drizzle of dulce de leche & pure maple syrup. Choice of: strawberry, blueberry, banana, or nutella',
         category: 'sweet-treats',
         price: '16.50'
       },
       {
         id: 'babka-french-toast',
         name: 'Babka French Toast',
-        description: 'Chocolate babka slices in cinnamon-vanilla french toast and a dusting of powdered sugar',
+        description: 'Chocolate babka toasted and served with fresh fruit and a dusting of powdered sugar',
         category: 'sweet-treats',
         price: '14.50'
       }
