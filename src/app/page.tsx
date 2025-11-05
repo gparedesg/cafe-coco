@@ -2,6 +2,7 @@ import Hero from '@/components/Hero'
 import MenuItemCard from '@/components/MenuItemCard'
 import LocationCard from '@/components/LocationCard'
 import OrderButton from '@/components/OrderButton'
+import Link from 'next/link'
 import { featuredItems } from '@/lib/menu-data'
 
 export default function Home() {
@@ -33,7 +34,15 @@ export default function Home() {
           </div>
           
           <div className="text-center">
-            <OrderButton size="lg" text="View Full Menu & Order" />
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
+              <OrderButton size="lg" text="Order Online" />
+              <Link
+                href="/menu"
+                className="px-8 py-4 text-lg font-semibold border-2 border-coffee-700 text-coffee-700 hover:bg-coffee-700 hover:text-white rounded-full transition-all duration-200"
+              >
+                View Full Menu
+              </Link>
+            </div>
             <p className="mt-4 text-coffee-600">
               Browse our complete menu and place your order for pickup or delivery
             </p>
