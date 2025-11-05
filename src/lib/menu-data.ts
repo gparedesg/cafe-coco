@@ -19,7 +19,7 @@ export interface MenuCategory {
 export const featuredItems: MenuItem[] = [
   {
     id: 'pistachio-croissant',
-    name: 'Pistachio',
+    name: 'Pistachio Croissant',
     description: 'Pistachio cream with crushed pistachios',
     category: 'croissants',
     price: '7.75',
@@ -27,23 +27,23 @@ export const featuredItems: MenuItem[] = [
   },
   {
     id: 'benedict',
-    name: 'Benedict',
-    description: 'Fluffy croissant or sourdough with poached salmon, avocado and hollandaise, house salad',
+    name: 'Coco Specials',
+    description: 'Try our diverse menu with seasonal ingredients',
     category: 'coco-specials',
     price: '19.50',
     isPopular: true
   },
   {
-    id: 'acai-treat',
-    name: 'Acai Treat',
-    description: 'Acai, granola, mixed fruits, chia, homemade butter, honey',
+    id: 'greek-yogurt-bowl',
+    name: 'Greek Yogurt Bowl',
+    description: 'Greek yogurt, mixed fruits, granola, seeds, nuts, coconut flakes, honey',
     category: 'sweet-treats',
-    price: '14.50',
+    price: '11.50',
     isPopular: true
   },
   {
     id: 'mediterranean-salad',
-    name: 'Mediterranean',
+    name: 'Mediterranean Salad',
     description: 'Mixed greens, tomato, mint, cherry tomatoes, cucumbers, feta, red onions, olives, feta cheese',
     category: 'salads',
     price: '15.50',
@@ -114,6 +114,14 @@ export const menuCategories: MenuCategory[] = [
     description: 'Flaky French pastries made with premium butter',
     items: [
       {
+        id: 'pistachio-croissant',
+        name: 'Pistachio',
+        description: 'Pistachio cream with crushed pistachios',
+        category: 'croissants',
+        price: '7.75',
+        isPopular: true
+      },
+      {
         id: 'our-croissant',
         name: 'Our Croissant',
         description: 'Flaky French classic pastry',
@@ -133,14 +141,6 @@ export const menuCategories: MenuCategory[] = [
         description: 'Filled with fresh almond paste & shaved almonds',
         category: 'croissants',
         price: '5.75'
-      },
-      {
-        id: 'pistachio-croissant',
-        name: 'Pistachio',
-        description: 'Pistachio cream with crushed pistachios',
-        category: 'croissants',
-        price: '7.75',
-        isPopular: true
       },
       {
         id: 'raspberry-croissant',
@@ -422,19 +422,19 @@ export const menuCategories: MenuCategory[] = [
     description: 'Indulgent breakfast desserts',
     items: [
       {
+        id: 'greek-yogurt-bowl',
+        name: 'Greek Yogurt Bowl',
+        description: 'Greek yogurt, mixed fruits, granola, seeds, nuts, coconut flakes, honey',
+        category: 'sweet-treats',
+        price: '11.50'
+      },
+      {
         id: 'acai-treat',
         name: 'Acai Treat',
         description: 'Acai, granola, mixed fruits, chia, almond butter, honey',
         category: 'sweet-treats',
         price: '14.50',
         isPopular: true
-      },
-      {
-        id: 'greek-yogurt-bowl',
-        name: 'Greek Yogurt Bowl',
-        description: 'Greek yogurt, mixed fruits, granola, seeds, nuts, coconut flakes, honey',
-        category: 'sweet-treats',
-        price: '11.50'
       },
       {
         id: 'mini-pancakes',
