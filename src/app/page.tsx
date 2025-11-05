@@ -66,7 +66,7 @@ export default function Home() {
 
               <p className="mt-6 text-lg md:text-xl text-coffee-700 leading-relaxed">
                 At Café Coco, the energy doesn’t stop when the coffee’s poured — it begins.
-                Our monthly <span className="font-semibold">Coffee Raves</span> bring together music,
+                Our <span className="font-semibold">Coffee Raves</span> bring together music,
                 movement, and community, all fueled by specialty brews and bold flavors. Think high-energy
                 beats, vibrant conversation, and the perfect buzz that only coffee can deliver. Whether
                 you come to dance, connect, or simply sip something extraordinary, our Coffee Raves are
@@ -106,11 +106,6 @@ export default function Home() {
                 </button>
               </form>
 
-              {/* Secondary CTA */}
-              <div className="mt-4 flex items-center gap-3 text-sm text-coffee-600">
-                <span className="inline-flex h-2 w-2 rounded-full bg-coffee-400" />
-                Monthly events • Limited spots • LIC, NYC
-              </div>
             </div>
 
             {/* Event card / visual */}
@@ -124,7 +119,7 @@ export default function Home() {
                         Coffee Rave — Next Drop
                       </h3>
                       <span className="text-xs uppercase tracking-wide px-2.5 py-1 rounded-full bg-yellow-100 text-coffee-700 border border-yellow-300">
-                        Monthly
+                        Coming Soon
                       </span>
                     </div>
 

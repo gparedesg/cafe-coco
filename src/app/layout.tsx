@@ -36,6 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
+        <meta name="apple-mobile-web-app-title" content="Café Coco" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-Z8V0K1DXG5"
           strategy="afterInteractive"
