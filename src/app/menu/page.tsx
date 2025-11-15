@@ -141,7 +141,7 @@ function CategoryDigestCard({ category, isExpanded, onToggle }: {
                         )}
                         {item.isGlutenFree && (
                           <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 border border-blue-300">
-                            Gluten Free
+                            GF
                           </span>
                         )}
                       </div>
@@ -167,6 +167,7 @@ function CategoryDigestCard({ category, isExpanded, onToggle }: {
 
 export default function MenuPage() {
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set())
+  const [scrollY, setScrollY] = useState(0)
 
   // Add smooth scroll behavior
   useEffect(() => {
@@ -174,6 +175,16 @@ export default function MenuPage() {
     return () => {
       document.documentElement.style.scrollBehavior = 'auto'
     }
+  }, [])
+
+  // Parallax scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   const toggleCategory = (categoryId: string) => {
@@ -219,12 +230,36 @@ export default function MenuPage() {
       `}</style>
 
       {/* Hero */}
-      <div className="bg-coffee-800 text-white py-20" id="top-order">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6">Menu</h1>
-          <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
-            Browse our full menu by category. Click any category to see all items and prices.
-          </p>
+      <div className="relative bg-coffee-800 text-white py-32 overflow-hidden h-[500px] md:h-[600px]" id="top-order">
+        {/* Background Image with Parallax */}
+        <div
+          className="absolute w-full"
+          style={{
+            top: '-20%',
+            bottom: '-30%',
+            transform: `translateY(-${scrollY * 0.4}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        >
+          <Image
+            src="/menu/hero.jpg"
+            alt="Café Coco Menu - Fresh breakfast and brunch"
+            fill
+            priority
+            className="object-cover object-center"
+            style={{ objectFit: 'cover' }}
+          />
+          {/* Overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-coffee-900/70 via-coffee-800/60 to-coffee-900/70" />
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center h-full flex flex-col justify-center">
+          <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6 drop-shadow-lg">Menu</h1>
+          <div className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
+            <p>Browse our full menu by category. </p>
+            <p>Click any category to see all items and prices.</p>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <OrderButton size="lg" text="Order Online Now" />
           </div>

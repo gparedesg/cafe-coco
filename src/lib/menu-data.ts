@@ -18,36 +18,34 @@ export interface MenuCategory {
 
 export const featuredItems: MenuItem[] = [
   {
-    id: 'pistachio-croissant',
-    name: 'Pistachio Croissant',
-    description: 'Pistachio cream with crushed pistachios',
-    category: 'croissants',
-    price: '7.75',
+    id: 'le-sandwich-combo',
+    name: 'Le Sandwich Combo',
+    description: 'Brie, fig & arugula sandwich on a half a baguette - served with drop coffee',
+    category: 'artisan-bread',
+    price: '14.50',
     isPopular: true
   },
   {
+    id: 'babka-french-toast',
+    name: 'Babka French Toast',
+    description: 'Chocolate babka toasted and served with fresh fruit and a dusting of powdered sugar',
+    category: 'sweet-treats',
+    price: '14.50'
+  },
+  {
     id: 'benedict',
-    name: 'Coco Specials',
-    description: 'Try our diverse menu with seasonal ingredients',
+    name: 'Benedict',
+    description: 'Flaky croissant or sourdough with smoked salmon, topped with pached egg, hollandaise, house salad',
     category: 'coco-specials',
     price: '19.50',
     isPopular: true
   },
   {
-    id: 'greek-yogurt-bowl',
-    name: 'Greek Yogurt Bowl',
-    description: 'Greek yogurt, mixed fruits, granola, seeds, nuts, coconut flakes, honey',
-    category: 'sweet-treats',
-    price: '11.50',
-    isPopular: true
-  },
-  {
-    id: 'mediterranean-salad',
-    name: 'Mediterranean Salad',
-    description: 'Mixed greens, tomato, mint, cherry tomatoes, cucumbers, feta, red onions, olives, feta cheese',
-    category: 'salads',
-    price: '15.50',
-    isPopular: true
+    id: 'bird-nest-coco-eggs',
+    name: 'Bird Nest Coco Eggs',
+    description: 'Curly kale salad, shaved potato nests, sunny-side up eggs, sunflower seeds, cruncy chili oil',
+    category: 'coco-specials',
+    price: '18.75'
   }
 ]
 
@@ -58,18 +56,18 @@ export const menuCategories: MenuCategory[] = [
     description: 'Authentic French breads, baked daily with organic flour',
     items: [
       {
-        id: 'our-baguette',
-        name: 'Our Baguette',
-        description: 'Authentic French baguette, baked daily with organic French flour',
-        category: 'artisan-bread',
-        price: '4.50'
-      },
-      {
         id: 'campagne-sourdough',
         name: 'Campagne Sourdough',
         description: 'Rustic organic country bread, blended with wheat, barley, and rye flours',
         category: 'artisan-bread',
         price: '8.00'
+      },
+      {
+        id: 'our-baguette',
+        name: 'Our Baguette',
+        description: 'Authentic French baguette, baked daily with organic French flour',
+        category: 'artisan-bread',
+        price: '4.50'
       },
       {
         id: 'seeded-campagne',
@@ -114,6 +112,13 @@ export const menuCategories: MenuCategory[] = [
     description: 'Flaky French pastries made with premium butter',
     items: [
       {
+        id: 'strawberry-croissant',
+        name: 'Strawberry',
+        description: 'Strawberry vanilla cream, fresh strawberries',
+        category: 'croissants',
+        price: '9.75'
+      },
+      {
         id: 'pistachio-croissant',
         name: 'Pistachio',
         description: 'Pistachio cream with crushed pistachios',
@@ -146,13 +151,6 @@ export const menuCategories: MenuCategory[] = [
         id: 'raspberry-croissant',
         name: 'Raspberry',
         description: 'Nutella cream with fresh raspberries',
-        category: 'croissants',
-        price: '9.75'
-      },
-      {
-        id: 'strawberry-croissant',
-        name: 'Strawberry',
-        description: 'Strawberry vanilla cream, fresh strawberries',
         category: 'croissants',
         price: '9.75'
       }
@@ -366,6 +364,13 @@ export const menuCategories: MenuCategory[] = [
     description: 'Open-faced toasts on house-baked sourdough',
     items: [
       {
+        id: 'caprese-tartine',
+        name: 'Caprese Tartine',
+        description: 'Burrata, tomato, basil pesto, balsamic glaze',
+        category: 'tartines',
+        price: '15.50'
+      },
+      {
         id: 'avocado-tartine',
         name: 'Avocado Tartine',
         description: 'Avocado, sun-dried tomatoes & multigrain',
@@ -378,13 +383,6 @@ export const menuCategories: MenuCategory[] = [
         description: 'Avocado',
         category: 'tartines',
         price: '16.50'
-      },
-      {
-        id: 'caprese-tartine',
-        name: 'Caprese Tartine',
-        description: 'Burrata, tomato, basil pesto, balsamic glaze',
-        category: 'tartines',
-        price: '15.50'
       },
       {
         id: 'roasted-veggie-tartine',
@@ -422,19 +420,19 @@ export const menuCategories: MenuCategory[] = [
     description: 'Indulgent breakfast desserts',
     items: [
       {
-        id: 'greek-yogurt-bowl',
-        name: 'Greek Yogurt Bowl',
-        description: 'Greek yogurt, mixed fruits, granola, seeds, nuts, coconut flakes, honey',
-        category: 'sweet-treats',
-        price: '11.50'
-      },
-      {
         id: 'acai-treat',
         name: 'Acai Treat',
         description: 'Acai, granola, mixed fruits, chia, almond butter, honey',
         category: 'sweet-treats',
         price: '14.50',
         isPopular: true
+      },
+      {
+        id: 'greek-yogurt-bowl',
+        name: 'Greek Yogurt Bowl',
+        description: 'Greek yogurt, mixed fruits, granola, seeds, nuts, coconut flakes, honey',
+        category: 'sweet-treats',
+        price: '11.50'
       },
       {
         id: 'mini-pancakes',
