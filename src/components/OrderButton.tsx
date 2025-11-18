@@ -1,5 +1,7 @@
 'use client'
 
+import { gtagReportConversion } from '@/lib/gtag'
+
 interface OrderButtonProps {
   text?: string
   size?: 'sm' | 'md' | 'lg'
@@ -20,6 +22,10 @@ export default function OrderButton({
   }
 
   const handleClick = () => {
+    // Track the conversion first
+    gtagReportConversion()
+    
+    // Then open the Toast POS link
     window.open('https://order.toasttab.com/online/cafe-coco', '_blank', 'noopener,noreferrer')
   }
 
