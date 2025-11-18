@@ -37,6 +37,8 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <meta name="apple-mobile-web-app-title" content="Café Coco" />
+        
+        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-Z8V0K1DXG5"
           strategy="afterInteractive"
@@ -47,6 +49,7 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-Z8V0K1DXG5');
+            gtag('config', 'AW-17609191068');
           `}
         </Script>
       </head>
