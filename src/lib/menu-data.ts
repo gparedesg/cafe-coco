@@ -20,7 +20,7 @@ export const featuredItems: MenuItem[] = [
   {
     id: 'le-sandwich-combo',
     name: 'Le Sandwich Combo',
-    description: 'Brie, fig & arugula sandwich on a half a baguette - served with drop coffee',
+    description: 'Brie, fig & arugula sandwich on a half a baguette - served with drip coffee',
     category: 'artisan-bread',
     price: '14.50',
     isPopular: true
@@ -35,7 +35,7 @@ export const featuredItems: MenuItem[] = [
   {
     id: 'benedict',
     name: 'Benedict',
-    description: 'Flaky croissant or sourdough with smoked salmon, topped with pached egg, hollandaise, house salad',
+    description: 'Flaky croissant or sourdough with smoked salmon, topped with poached egg, hollandaise, house salad',
     category: 'coco-specials',
     price: '19.50',
     isPopular: true
@@ -93,7 +93,7 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'le-sandwich-combo',
         name: 'Le Sandwich Combo',
-        description: 'Brie, fig & arugula sandwich on a half a baguette - served with drop coffee',
+        description: 'Brie, fig & arugula sandwich on a half a baguette - served with drip coffee',
         category: 'artisan-bread',
         price: '14.50'
       },
@@ -264,7 +264,7 @@ export const menuCategories: MenuCategory[] = [
       {
         id: 'benedict',
         name: 'Benedict',
-        description: 'Flaky croissant or sourdough with smoked salmon, topped with pached egg, hollandaise, house salad',
+        description: 'Flaky croissant or sourdough with smoked salmon, topped with poached egg, hollandaise, house salad',
         category: 'coco-specials',
         price: '19.50',
         isPopular: true
