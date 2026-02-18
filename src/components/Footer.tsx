@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Instagram, Facebook, Twitter, MapPin, Clock } from 'lucide-react'
+import { Instagram, Facebook, Twitter, MapPin, Clock, Phone } from 'lucide-react'
 import Image from 'next/image'
 
 const date = new Date();
@@ -71,6 +71,13 @@ export default function Footer() {
                   <p>21-52 44th Dr</p>
                   <p>Long Island City, NY 11101</p>
                 </div>
+              </a>
+              <a
+                href="tel:+13476124242"
+                className="flex items-start space-x-2 hover:opacity-80 transition-opacity"
+              >
+                <Phone className="w-4 h-4 text-yellow-300 mt-1 flex-shrink-0" />
+                <span className="text-yellow-200 text-sm">(347) 612-4242</span>
               </a>
               <div className="flex items-start space-x-2">
                 <Clock className="w-4 h-4 text-yellow-300 mt-1 flex-shrink-0" />
