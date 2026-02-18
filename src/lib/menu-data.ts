@@ -25,16 +25,33 @@ export const featuredItems: MenuItem[] = [
     price: '16.75'
   },
   {
-    id: 'croissant-benedict',
+    id: 'benedict',
     name: 'Croissant Benedict',
     description: 'Poached egg and smoked salmon on a warm croissant with silky hollandaise',
     category: 'eggs',
     price: '19.75',
     isPopular: true
+  },
+  {
+    id: 'green-egg-sandwich',
+    name: 'Green Egg Sandwich',
+    description: 'Warm brioche filled with scramble eggs, spinach, avocado, cucumbers, microgreens & hummus',
+    category: 'eggs',
+    price: '16.75',
+    isPopular: true
+  },
+  {
+    id: 'breakfast-sandwich',
+    name: 'Breakfast Sandwich',
+    description: 'Scrambled eggs, turkey bacon, avocado, sweet mayo, brioche, served with house salad',
+    category: 'eggs',
+    price: '18.50',
+    isPopular: true
   }
 ]
 
 export const menuCategories: MenuCategory[] = [
+  /* Drinks menu — commented out until section images are available
   {
     id: 'hot-drinks',
     name: 'Hot Drinks',
@@ -287,6 +304,7 @@ export const menuCategories: MenuCategory[] = [
       }
     ]
   },
+  */
   {
     id: 'artisan-bread',
     name: 'Artisan Bread',
@@ -356,18 +374,18 @@ export const menuCategories: MenuCategory[] = [
     description: 'Flaky French pastries made with premium butter',
     items: [
       {
+        id: 'chocolate-croissant',
+        name: 'Pain au Chocolat',
+        description: 'Classic pastry with dark valrhona',
+        category: 'croissants',
+        price: '5.50'
+      },
+      {
         id: 'our-croissant',
         name: 'Our Croissant',
         description: 'Flaky French classic pastry',
         category: 'croissants',
         price: '4.95'
-      },
-      {
-        id: 'pain-au-chocolat',
-        name: 'Pain au Chocolat',
-        description: 'Classic pastry with dark valrhona',
-        category: 'croissants',
-        price: '5.50'
       },
       {
         id: 'almond-croissant',
@@ -440,7 +458,7 @@ export const menuCategories: MenuCategory[] = [
     description: 'Farm-fresh eggs prepared to perfection',
     items: [
       {
-        id: 'croissant-benedict',
+        id: 'benedict',
         name: 'Croissant Benedict',
         description: 'Poached egg and smoked salmon on a warm croissant with silky hollandaise',
         category: 'eggs',
@@ -534,7 +552,7 @@ export const menuCategories: MenuCategory[] = [
     description: '',
     items: [
       {
-        id: 'prosciutto',
+        id: 'le-sandwich-combo',
         name: 'Prosciutto',
         description: 'French baguette, pesto, arugula, Prosciutto di Parma, mozzarella, drizzle of balsamic cream',
         category: 'sandwiches',
@@ -569,7 +587,7 @@ export const menuCategories: MenuCategory[] = [
     description: 'Fresh, vibrant salads (Add chicken +$7)',
     items: [
       {
-        id: 'caesar-salad',
+        id: 'mediterranean-salad',
         name: 'Caesar Salad',
         description: 'Romaine lettuce, cream cheese & bread croutons, shredded parmesan, house Caesar dressing',
         category: 'salads',
@@ -597,7 +615,7 @@ export const menuCategories: MenuCategory[] = [
     description: '',
     items: [
       {
-        id: 'soupe-du-jour',
+        id: 'shakshuka',
         name: 'Made Fresh Daily',
         description: "Chef's daily soup served with toasted sourdough",
         category: 'soupe-du-jour',
